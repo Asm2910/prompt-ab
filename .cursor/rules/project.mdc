@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+Project: Prompt A/B testing platform (FastAPI, PostgreSQL, SQLAlchemy, scipy, Streamlit).
+- Python 3.12, type hints everywhere, Pydantic for all LLM outputs.
+- Never hardcode API keys; read from environment variables.
+- Write a pytest test for every splitter, stats and registry function.
+- Small, focused changes. Do not refactor files I did not mention.
+- Never declare an experiment winner before the planned sample size is reached.
+- Explain non-obvious code in two or three lines of comments.
