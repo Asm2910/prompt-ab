@@ -10,7 +10,7 @@ from sqlalchemy.orm import Session
 
 from app.models import ActiveVersion, AuditLog, Prompt, PromptVersion
 
-_PLACEHOLDER = re.compile(r"\{\{(\w+)\}\}")
+_PLACEHOLDER = re.compile(r"\{\{\s*(\w+)\s*\}\}")
 
 
 class PromptNotFoundError(LookupError):

@@ -7,10 +7,28 @@ from datetime import datetime
 from typing import Any
 
 from fastapi import Depends, FastAPI, HTTPException, status
-from pydantic import BaseModel, ConfigDict
+from app.registry import (
+    DuplicatePromptError,
+    MissingVariablesError,
+    PromptNotFoundError,
+    VersionNotFoundError,
+    activate_version,
+    add_version,
+    create_prompt,
+    get_version,
+    list_audit_log,
+    list_versions,
+    render_template,
+)
+
+from anthropic import Anthropic
+from pydantic import BaseModel, ConfigDict, Field
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.models import get_engine
+from app.llm import LLMError, complete, cost_usd, get_client
+from app.models import ActiveVersion, PromptVersion, RequestLog, get_engine
+
 from app.registry import (
     DuplicatePromptError,
     MissingVariablesError,
@@ -177,3 +195,101 @@ def post_activate(
 @app.get("/audit-log", response_model=list[AuditOut])
 def get_audit_log(session: Session = Depends(get_db)) -> list[AuditOut]:
     return [AuditOut.model_validate(row) for row in list_audit_log(session)]
+
+
+# ---------------------------------------------------------------------------
+# Phase 2: serving endpoint
+# ---------------------------------------------------------------------------
+
+
+
+class CompletionBody(BaseModel):
+    prompt_id: int
+    user_id: str
+    variables: dict[str, str] = Field(default_factory=dict)
+    input: str
+
+
+class CompletionOut(BaseModel):
+    request_id: int
+    output: str
+    version: int
+    model: str
+    input_tokens: int
+    output_tokens: int
+    cost_usd: float | None
+    latency_ms: int
+
+
+def get_llm_client() -> Anthropic:
+    # A dependency so tests can swap in a fake client and never call the real API.
+    try:
+        return get_client()
+    except LLMError as exc:
+        raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, str(exc)) from exc
+
+
+
+
+@app.post("/v1/completions", response_model=CompletionOut)
+def post_completion(
+    body: CompletionBody,
+    session: Session = Depends(get_db),
+    client: Anthropic = Depends(get_llm_client),
+) -> CompletionOut:
+    # 1. Find the active version of this prompt.
+    version = session.execute(
+        select(PromptVersion)
+        .join(ActiveVersion, ActiveVersion.version_id == PromptVersion.id)
+        .where(ActiveVersion.prompt_id == body.prompt_id)
+    ).scalar_one_or_none()
+    if version is None:
+        raise HTTPException(
+            status.HTTP_404_NOT_FOUND, f"No active version for prompt {body.prompt_id}"
+        )
+
+    # 2. Fill the versioned template. The template is versioned, not the filled text.
+    try:
+        system = render_template(version.system_prompt, body.variables)
+    except MissingVariablesError as exc:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
+
+    log = RequestLog(
+        prompt_id=version.prompt_id,
+        version_id=version.id,
+        user_id=body.user_id,
+        variables=body.variables,
+        input_text=body.input,
+    )
+
+    # 3. Call the LLM. On failure we still keep a log row, so we commit before raising:
+    #    get_db rolls back on any exception, which would otherwise erase the row.
+    try:
+        result = complete(client, version.model, system, body.input)
+    except LLMError as exc:
+        log.error = str(exc)[:1000]
+        session.add(log)
+        session.commit()
+        raise HTTPException(
+            status.HTTP_502_BAD_GATEWAY, f"LLM call failed: {exc}"
+        ) from exc
+
+    # 4. Log tokens, cost and latency, then return.
+    log.output_text = result.text
+    log.input_tokens = result.input_tokens
+    log.output_tokens = result.output_tokens
+    log.cost_usd = cost_usd(result.input_tokens, result.output_tokens, version.model)
+    log.latency_ms = result.latency_ms
+    session.add(log)
+    session.commit()
+
+    return CompletionOut(
+        request_id=log.id,
+        output=result.text,
+        version=version.version,
+        model=version.model,
+        input_tokens=result.input_tokens,
+        output_tokens=result.output_tokens,
+        cost_usd=log.cost_usd,
+        latency_ms=result.latency_ms,
+    )

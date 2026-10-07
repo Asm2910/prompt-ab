@@ -60,6 +60,27 @@ class AuditLog(Base):
     details: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
+class RequestLog(Base):
+    """One row per /v1/completions call, successful or failed."""
+
+    __tablename__ = "request_logs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    prompt_id: Mapped[int] = mapped_column(ForeignKey("prompts.id"), nullable=False)
+    version_id: Mapped[int] = mapped_column(ForeignKey("prompt_versions.id"), nullable=False)
+    user_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    variables: Mapped[dict[str, Any]] = mapped_column(JSON, nullable=False)
+    input_text: Mapped[str] = mapped_column(Text, nullable=False)
+    output_text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    input_tokens: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    output_tokens: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    cost_usd: Mapped[float | None] = mapped_column(Float, nullable=True)
+    latency_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    error: Mapped[str | None] = mapped_column(Text, nullable=True)
+    # Filled in Phase 3 when a request is routed through an experiment.
+    experiment_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    variant_version_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
 def get_engine() -> Engine:
     # Lazy so pytest can override get_db with in-memory SQLite and never open Postgres.
