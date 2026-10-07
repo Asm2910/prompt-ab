@@ -26,8 +26,23 @@ from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.llm import LLMError, complete, cost_usd, get_client
-from app.models import ActiveVersion, PromptVersion, RequestLog, get_engine
+from app.llm import LLMError, complete, cost_usd, get_client  
+
+from app.experiments import (
+    ExperimentNotFoundError,
+    ExperimentStateError,
+    InvalidExperimentError,
+    VariantSpec,
+    assignment_counts,
+    create_experiment,
+    get_experiment,
+    get_or_assign,
+    get_running_experiment,
+    get_variants,
+    start_experiment,
+    stop_experiment,
+)
+from app.models import ActiveVersion, Experiment, PromptVersion, RequestLog, get_engine
 
 from app.registry import (
     DuplicatePromptError,
@@ -117,11 +132,11 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def _http_for(exc: Exception) -> HTTPException:
-    if isinstance(exc, PromptNotFoundError | VersionNotFoundError):
+    if isinstance(exc, PromptNotFoundError | VersionNotFoundError | ExperimentNotFoundError):
         return HTTPException(status.HTTP_404_NOT_FOUND, str(exc))
-    if isinstance(exc, DuplicatePromptError):
+    if isinstance(exc, DuplicatePromptError | ExperimentStateError):
         return HTTPException(status.HTTP_409_CONFLICT, str(exc))
-    if isinstance(exc, MissingVariablesError):
+    if isinstance(exc, MissingVariablesError | InvalidExperimentError):
         return HTTPException(status.HTTP_400_BAD_REQUEST, str(exc))
     raise exc
 
@@ -237,16 +252,21 @@ def post_completion(
     session: Session = Depends(get_db),
     client: Anthropic = Depends(get_llm_client),
 ) -> CompletionOut:
-    # 1. Find the active version of this prompt.
-    version = session.execute(
-        select(PromptVersion)
-        .join(ActiveVersion, ActiveVersion.version_id == PromptVersion.id)
-        .where(ActiveVersion.prompt_id == body.prompt_id)
-    ).scalar_one_or_none()
-    if version is None:
-        raise HTTPException(
-            status.HTTP_404_NOT_FOUND, f"No active version for prompt {body.prompt_id}"
-        )
+    # 1. Pick the version: a running experiment decides it, otherwise the active version.
+    experiment = get_running_experiment(session, body.prompt_id)
+    if experiment is not None:
+        variant = get_or_assign(session, experiment, body.user_id)
+        version = session.get(PromptVersion, variant.version_id)
+    else:
+        version = session.execute(
+            select(PromptVersion)
+            .join(ActiveVersion, ActiveVersion.version_id == PromptVersion.id)
+            .where(ActiveVersion.prompt_id == body.prompt_id)
+        ).scalar_one_or_none()
+        if version is None:
+            raise HTTPException(
+                status.HTTP_404_NOT_FOUND, f"No active version for prompt {body.prompt_id}"
+            )
 
     # 2. Fill the versioned template. The template is versioned, not the filled text.
     try:
@@ -260,6 +280,8 @@ def post_completion(
         user_id=body.user_id,
         variables=body.variables,
         input_text=body.input,
+        experiment_id=experiment.id if experiment is not None else None,
+        variant_version_id=version.id if experiment is not None else None,
     )
 
     # 3. Call the LLM. On failure we still keep a log row, so we commit before raising:
@@ -293,3 +315,128 @@ def post_completion(
         cost_usd=log.cost_usd,
         latency_ms=result.latency_ms,
     )
+
+
+# ---------------------------------------------------------------------------
+# Phase 3: experiments
+# ---------------------------------------------------------------------------
+
+
+class VariantIn(BaseModel):
+    version: int
+    traffic_share: float
+    label: str | None = None
+
+
+class CreateExperimentBody(BaseModel):
+    name: str
+    prompt_id: int
+    variants: list[VariantIn]
+    primary_metric: str = "quality"
+    target_sample_size: int
+    actor: str
+    reason: str
+
+
+class ActorBody(BaseModel):
+    actor: str
+    reason: str
+
+
+class StopBody(ActorBody):
+    cancel: bool = False  # true marks the experiment cancelled instead of completed
+
+
+class VariantOut(BaseModel):
+    id: int
+    version_id: int
+    label: str
+    traffic_share: float
+    assigned_users: int
+
+
+class ExperimentOut(BaseModel):
+    id: int
+    name: str
+    prompt_id: int
+    status: str
+    primary_metric: str
+    target_sample_size: int
+    created_at: datetime
+    started_at: datetime | None
+    ended_at: datetime | None
+    variants: list[VariantOut]
+
+
+def _experiment_out(session: Session, experiment: Experiment) -> ExperimentOut:
+    counts = assignment_counts(session, experiment.id)
+    variants = [
+        VariantOut(
+            id=v.id,
+            version_id=v.version_id,
+            label=v.label,
+            traffic_share=v.traffic_share,
+            assigned_users=counts.get(v.id, 0),
+        )
+        for v in get_variants(session, experiment.id)
+    ]
+    return ExperimentOut(
+        id=experiment.id,
+        name=experiment.name,
+        prompt_id=experiment.prompt_id,
+        status=experiment.status,
+        primary_metric=experiment.primary_metric,
+        target_sample_size=experiment.target_sample_size,
+        created_at=experiment.created_at,
+        started_at=experiment.started_at,
+        ended_at=experiment.ended_at,
+        variants=variants,
+    )
+
+
+@app.post("/experiments", response_model=ExperimentOut)
+def post_experiment(
+    body: CreateExperimentBody, session: Session = Depends(get_db)
+) -> ExperimentOut:
+    specs = [VariantSpec(v.version, v.traffic_share, v.label) for v in body.variants]
+    try:
+        experiment = create_experiment(
+            session, body.name, body.prompt_id, specs, body.primary_metric,
+            body.target_sample_size, body.actor, body.reason,
+        )
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return _experiment_out(session, experiment)
+
+
+@app.get("/experiments/{experiment_id}", response_model=ExperimentOut)
+def get_one_experiment(experiment_id: int, session: Session = Depends(get_db)) -> ExperimentOut:
+    try:
+        experiment = get_experiment(session, experiment_id)
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return _experiment_out(session, experiment)
+
+
+@app.post("/experiments/{experiment_id}/start", response_model=ExperimentOut)
+def post_start_experiment(
+    experiment_id: int, body: ActorBody, session: Session = Depends(get_db)
+) -> ExperimentOut:
+    try:
+        experiment = start_experiment(session, experiment_id, body.actor, body.reason)
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return _experiment_out(session, experiment)
+
+
+@app.post("/experiments/{experiment_id}/stop", response_model=ExperimentOut)
+def post_stop_experiment(
+    experiment_id: int, body: StopBody, session: Session = Depends(get_db)
+) -> ExperimentOut:
+    try:
+        experiment = stop_experiment(
+            session, experiment_id, body.actor, body.reason, cancel=body.cancel
+        )
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return _experiment_out(session, experiment)

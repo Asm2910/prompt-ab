@@ -82,6 +82,46 @@ class RequestLog(Base):
     variant_version_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
+
+class Experiment(Base):
+    __tablename__ = "experiments"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    prompt_id: Mapped[int] = mapped_column(ForeignKey("prompts.id"), nullable=False)
+    # draft -> running -> completed | cancelled
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="draft")
+    primary_metric: Mapped[str] = mapped_column(String(64), nullable=False)
+    # Fixed up front. Phase 5 refuses to declare a winner before this many samples.
+    target_sample_size: Mapped[int] = mapped_column(Integer, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+    started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    ended_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+
+
+class ExperimentVariant(Base):
+    __tablename__ = "experiment_variants"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    experiment_id: Mapped[int] = mapped_column(ForeignKey("experiments.id"), nullable=False)
+    version_id: Mapped[int] = mapped_column(ForeignKey("prompt_versions.id"), nullable=False)
+    label: Mapped[str] = mapped_column(String(64), nullable=False)
+    traffic_share: Mapped[float] = mapped_column(Float, nullable=False)
+
+
+class ExperimentAssignment(Base):
+    """Log of which variant each user was given. The hash decides; this records it."""
+
+    __tablename__ = "experiment_assignments"
+    __table_args__ = (UniqueConstraint("experiment_id", "user_id"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    experiment_id: Mapped[int] = mapped_column(ForeignKey("experiments.id"), nullable=False)
+    user_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    variant_id: Mapped[int] = mapped_column(ForeignKey("experiment_variants.id"), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+
 def get_engine() -> Engine:
     # Lazy so pytest can override get_db with in-memory SQLite and never open Postgres.
     global _engine
