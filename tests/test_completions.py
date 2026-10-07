@@ -10,7 +10,7 @@ from sqlalchemy import create_engine, select
 from sqlalchemy.orm import Session
 from sqlalchemy.pool import StaticPool
 
-from app.main import app, get_db, get_llm_client
+from app.main import app, get_db, get_judge_rate, get_llm_client, get_session_factory
 from app.models import Base, RequestLog
 
 MODEL = "claude-haiku-4-5-20251001"
@@ -57,6 +57,8 @@ def env():
     saved = dict(app.dependency_overrides)
     app.dependency_overrides[get_db] = override_db
     app.dependency_overrides[get_llm_client] = lambda: fake
+    app.dependency_overrides[get_judge_rate] = lambda: 0.0  # judging is off unless a test turns it on
+    app.dependency_overrides[get_session_factory] = lambda: (lambda: Session(engine))
     yield SimpleNamespace(http=TestClient(app), engine=engine, llm=fake)
     app.dependency_overrides.clear()
     app.dependency_overrides.update(saved)

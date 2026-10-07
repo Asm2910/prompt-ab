@@ -121,6 +121,21 @@ class ExperimentAssignment(Base):
     variant_id: Mapped[int] = mapped_column(ForeignKey("experiment_variants.id"), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
+class MetricScore(Base):
+    """One measured value for one request: a cheap check or a judge score."""
+
+    __tablename__ = "metric_scores"
+    __table_args__ = (UniqueConstraint("request_id", "metric"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    request_id: Mapped[int] = mapped_column(ForeignKey("request_logs.id"), nullable=False)
+    # json_valid, json_bare, judge_quality, judge_error
+    metric: Mapped[str] = mapped_column(String(64), nullable=False)
+    value: Mapped[float] = mapped_column(Float, nullable=False)
+    # What computing this metric cost (only the judge costs anything).
+    cost_usd: Mapped[float | None] = mapped_column(Float, nullable=True)
+    details: Mapped[dict[str, Any] | None] = mapped_column(JSON, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
 def get_engine() -> Engine:
     # Lazy so pytest can override get_db with in-memory SQLite and never open Postgres.

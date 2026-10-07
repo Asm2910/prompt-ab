@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
-from collections.abc import Generator
+from collections.abc import Callable, Generator
+from dataclasses import asdict
 from datetime import datetime
 from typing import Any
 
-from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, status
 from app.registry import (
     DuplicatePromptError,
     MissingVariablesError,
@@ -42,6 +43,17 @@ from app.experiments import (
     start_experiment,
     stop_experiment,
 )
+
+from app.metrics import (
+    JUDGE_MODEL,
+    add_output_metrics,
+    judge_sample_rate,
+    run_judge,
+    should_judge,
+    summarize_experiment,
+)
+
+
 from app.models import ActiveVersion, Experiment, PromptVersion, RequestLog, get_engine
 
 from app.registry import (
@@ -243,14 +255,24 @@ def get_llm_client() -> Anthropic:
     except LLMError as exc:
         raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, str(exc)) from exc
 
+def get_session_factory() -> Callable[[], Session]:
+    # Background jobs outlive the request, so they open their own database session.
+    return lambda: Session(get_engine())
 
+
+def get_judge_rate() -> float:
+    # A dependency so tests can switch judging on or off.
+    return judge_sample_rate()
 
 
 @app.post("/v1/completions", response_model=CompletionOut)
 def post_completion(
     body: CompletionBody,
+    background_tasks: BackgroundTasks,
     session: Session = Depends(get_db),
     client: Anthropic = Depends(get_llm_client),
+    make_session: Callable[[], Session] = Depends(get_session_factory),
+    judge_rate: float = Depends(get_judge_rate),
 ) -> CompletionOut:
     # 1. Pick the version: a running experiment decides it, otherwise the active version.
     experiment = get_running_experiment(session, body.prompt_id)
@@ -296,14 +318,23 @@ def post_completion(
             status.HTTP_502_BAD_GATEWAY, f"LLM call failed: {exc}"
         ) from exc
 
-    # 4. Log tokens, cost and latency, then return.
+    # 4. Log tokens, cost and latency, plus the free output checks, then commit.
     log.output_text = result.text
     log.input_tokens = result.input_tokens
     log.output_tokens = result.output_tokens
     log.cost_usd = cost_usd(result.input_tokens, result.output_tokens, version.model)
     log.latency_ms = result.latency_ms
     session.add(log)
+    session.flush()  # assigns log.id, which the metric rows point at
+    add_output_metrics(session, log.id, result.text)
     session.commit()
+
+    # 5. The judge runs after the response is sent, so the caller never waits for it.
+    #    It is skipped when it would grade its own model, and sampled by JUDGE_SAMPLE_RATE.
+    if version.model != JUDGE_MODEL and should_judge(log.id, judge_rate):
+        background_tasks.add_task(
+            run_judge, make_session, client, log.id, system, body.input, result.text
+        )
 
     return CompletionOut(
         request_id=log.id,
@@ -440,3 +471,53 @@ def post_stop_experiment(
     except Exception as exc:
         raise _http_for(exc) from exc
     return _experiment_out(session, experiment)
+
+    # ---------------------------------------------------------------------------
+# Phase 4: metrics
+# ---------------------------------------------------------------------------
+
+
+class VariantMetricsOut(BaseModel):
+    variant_id: int
+    label: str
+    version_id: int
+    requests: int
+    errors: int
+    error_rate: float | None
+    mean_latency_ms: float | None
+    p95_latency_ms: float | None
+    mean_input_tokens: float | None
+    mean_output_tokens: float | None
+    mean_cost_usd: float | None
+    total_cost_usd: float
+    json_valid_rate: float | None
+    json_bare_rate: float | None
+    judge_n: int
+    judge_mean: float | None
+    judge_std: float | None
+    judge_failures: int
+    judge_cost_usd: float
+
+
+class ExperimentMetricsOut(BaseModel):
+    experiment_id: int
+    status: str
+    target_sample_size: int
+    variants: list[VariantMetricsOut]
+
+
+@app.get("/experiments/{experiment_id}/metrics", response_model=ExperimentMetricsOut)
+def get_experiment_metrics(
+    experiment_id: int, session: Session = Depends(get_db)
+) -> ExperimentMetricsOut:
+    try:
+        experiment = get_experiment(session, experiment_id)
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    summaries = summarize_experiment(session, experiment_id)
+    return ExperimentMetricsOut(
+        experiment_id=experiment.id,
+        status=experiment.status,
+        target_sample_size=experiment.target_sample_size,
+        variants=[VariantMetricsOut(**asdict(s)) for s in summaries],
+    )
