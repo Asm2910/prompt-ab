@@ -4,10 +4,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.experiments import get_experiment, get_variants
 from app.metrics import BUILTIN_METRICS, metric_values
+from app.models import MetricScore, RequestLog
 from app.stats import ChallengerResult, Decision, Test, VariantStats, decide
 
 METRIC_ALIASES = {"quality": "judge_quality"}
@@ -109,3 +111,47 @@ def analyze_experiment(
         comparisons=decision.comparisons,
         note=_note(decision, metric_name, alpha),
     )
+
+
+@dataclass(frozen=True)
+class SeriesPoint:
+    n: int
+    value: float
+    running_mean: float
+
+
+@dataclass(frozen=True)
+class VariantSeries:
+    variant_id: int
+    label: str
+    points: list[SeriesPoint]
+
+
+def metric_series(session: Session, experiment_id: int, metric: str) -> list[VariantSeries]:
+    """Each variant's observations in request order, with the running mean after each one."""
+    metric = resolve_metric(metric)
+    variants = get_variants(session, experiment_id)
+    variant_for_version = {v.version_id: v.id for v in variants}
+    if metric in BUILTIN_METRICS:  # plain columns on request_logs; failed requests are skipped
+        query = (
+            select(RequestLog.id, RequestLog.variant_version_id, getattr(RequestLog, metric))
+            .where(RequestLog.experiment_id == experiment_id, RequestLog.error.is_(None))
+            .order_by(RequestLog.id)
+        )
+    else:
+        query = (
+            select(RequestLog.id, RequestLog.variant_version_id, MetricScore.value)
+            .join(MetricScore, MetricScore.request_id == RequestLog.id)
+            .where(RequestLog.experiment_id == experiment_id, MetricScore.metric == metric)
+            .order_by(RequestLog.id)
+        )
+    totals = {v.id: 0.0 for v in variants}
+    points: dict[int, list[SeriesPoint]] = {v.id: [] for v in variants}
+    for _, version_id, value in session.execute(query):
+        variant_id = variant_for_version.get(version_id)
+        if variant_id is None or value is None:
+            continue
+        totals[variant_id] += float(value)
+        n = len(points[variant_id]) + 1
+        points[variant_id].append(SeriesPoint(n, float(value), totals[variant_id] / n))
+    return [VariantSeries(v.id, v.label, points[v.id]) for v in variants]

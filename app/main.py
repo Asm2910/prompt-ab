@@ -8,7 +8,7 @@ from datetime import datetime
 from typing import Any
 
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Query, status
-from app.results import UnknownMetricError, analyze_experiment
+from app.results import UnknownMetricError, analyze_experiment, metric_series, resolve_metric
 from app.stats import required_sample_size
 
 from app.registry import (
@@ -27,7 +27,7 @@ from app.registry import (
 
 from anthropic import Anthropic
 from pydantic import BaseModel, ConfigDict, Field
-from sqlalchemy import select
+from sqlalchemy import select, func
 from sqlalchemy.orm import Session
 
 from app.llm import LLMError, complete, cost_usd, get_client  
@@ -56,9 +56,7 @@ from app.metrics import (
     summarize_experiment,
 )
 
-
-from app.models import ActiveVersion, Experiment, PromptVersion, RequestLog, get_engine
-
+from app.models import ActiveVersion, Experiment, Prompt, PromptVersion, RequestLog, get_engine
 from app.registry import (
     DuplicatePromptError,
     MissingVariablesError,
@@ -610,4 +608,84 @@ def get_sample_size(
         effect=effect,
         alpha=alpha,
         power=power,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Phase 6: endpoints the dashboard needs
+# ---------------------------------------------------------------------------
+
+
+class PromptSummaryOut(BaseModel):
+    id: int
+    name: str
+    created_at: datetime
+    versions: int
+    active_version: int | None
+
+
+class SeriesPointOut(BaseModel):
+    n: int
+    value: float
+    running_mean: float
+
+
+class VariantSeriesOut(BaseModel):
+    variant_id: int
+    label: str
+    points: list[SeriesPointOut]
+
+
+class SeriesOut(BaseModel):
+    experiment_id: int
+    metric: str
+    variants: list[VariantSeriesOut]
+
+
+@app.get("/prompts", response_model=list[PromptSummaryOut])
+def list_prompts(session: Session = Depends(get_db)) -> list[PromptSummaryOut]:
+    out = []
+    for prompt in session.scalars(select(Prompt).order_by(Prompt.id)):
+        count = session.scalar(
+            select(func.count()).select_from(PromptVersion).where(PromptVersion.prompt_id == prompt.id)
+        )
+        active = session.execute(
+            select(PromptVersion.version)
+            .join(ActiveVersion, ActiveVersion.version_id == PromptVersion.id)
+            .where(ActiveVersion.prompt_id == prompt.id)
+        ).scalar_one_or_none()
+        out.append(
+            PromptSummaryOut(
+                id=prompt.id,
+                name=prompt.name,
+                created_at=prompt.created_at,
+                versions=count or 0,
+                active_version=active,
+            )
+        )
+    return out
+
+
+@app.get("/experiments", response_model=list[ExperimentOut])
+def list_experiments(session: Session = Depends(get_db)) -> list[ExperimentOut]:
+    rows = session.scalars(select(Experiment).order_by(Experiment.id.desc())).all()
+    return [_experiment_out(session, row) for row in rows]
+
+
+@app.get("/experiments/{experiment_id}/series", response_model=SeriesOut)
+def get_experiment_series(
+    experiment_id: int, metric: str | None = None, session: Session = Depends(get_db)
+) -> SeriesOut:
+    try:
+        experiment = get_experiment(session, experiment_id)
+        name = resolve_metric(metric or experiment.primary_metric)
+        series = metric_series(session, experiment_id, name)
+    except UnknownMetricError as exc:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return SeriesOut(
+        experiment_id=experiment_id,
+        metric=name,
+        variants=[VariantSeriesOut(**asdict(s)) for s in series],
     )
