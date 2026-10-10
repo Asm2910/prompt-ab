@@ -7,7 +7,10 @@ from dataclasses import asdict
 from datetime import datetime
 from typing import Any
 
-from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, status
+from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Query, status
+from app.results import UnknownMetricError, analyze_experiment
+from app.stats import required_sample_size
+
 from app.registry import (
     DuplicatePromptError,
     MissingVariablesError,
@@ -520,4 +523,91 @@ def get_experiment_metrics(
         status=experiment.status,
         target_sample_size=experiment.target_sample_size,
         variants=[VariantMetricsOut(**asdict(s)) for s in summaries],
+    )
+
+    # ---------------------------------------------------------------------------
+# Phase 5: statistics
+# ---------------------------------------------------------------------------
+
+
+class VariantStatsOut(BaseModel):
+    variant_id: int
+    label: str
+    n: int
+    mean: float | None
+    std: float | None
+    samples_needed: int
+
+
+class ComparisonOut(BaseModel):
+    variant_id: int
+    label: str
+    verdict: str  # pending | better | worse | no_difference | insufficient_data
+    diff: float | None
+    ci_low: float | None
+    ci_high: float | None
+    ci_level: float | None
+    p_welch: float | None
+    p_mann_whitney: float | None
+    p_decision: float | None
+    p_adjusted: float | None
+    cohens_d: float | None
+    mde: float | None
+
+
+class ExperimentResultsOut(BaseModel):
+    experiment_id: int
+    experiment_status: str
+    metric: str
+    higher_is_better: bool
+    decision_test: str
+    alpha: float
+    power: float
+    target_per_variant: int
+    decision: str  # not_ready | winner | control_holds | no_difference
+    winner: str | None
+    interim: bool
+    variants: list[VariantStatsOut]
+    comparisons: list[ComparisonOut]
+    note: str
+
+
+class SampleSizeOut(BaseModel):
+    per_variant: int
+    std: float
+    effect: float
+    alpha: float
+    power: float
+
+
+@app.get("/experiments/{experiment_id}/results", response_model=ExperimentResultsOut)
+def get_experiment_results(
+    experiment_id: int,
+    alpha: float = Query(0.05, gt=0, lt=0.5),
+    metric: str | None = None,
+    session: Session = Depends(get_db),
+) -> ExperimentResultsOut:
+    try:
+        results = analyze_experiment(session, experiment_id, alpha=alpha, metric=metric)
+    except UnknownMetricError as exc:
+        raise HTTPException(status.HTTP_400_BAD_REQUEST, str(exc)) from exc
+    except Exception as exc:
+        raise _http_for(exc) from exc
+    return ExperimentResultsOut(**asdict(results))
+
+
+@app.get("/stats/sample-size", response_model=SampleSizeOut)
+def get_sample_size(
+    std: float = Query(..., gt=0),
+    effect: float = Query(..., gt=0),
+    alpha: float = Query(0.05, gt=0, lt=0.5),
+    power: float = Query(0.8, gt=0, lt=1),
+) -> SampleSizeOut:
+    """How many observations each variant needs. Decide this BEFORE starting an experiment."""
+    return SampleSizeOut(
+        per_variant=required_sample_size(std, effect, alpha, power),
+        std=std,
+        effect=effect,
+        alpha=alpha,
+        power=power,
     )
