@@ -8,7 +8,13 @@ from datetime import datetime
 from typing import Any
 
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Query, status
-from app.results import UnknownMetricError, analyze_experiment, metric_series, resolve_metric
+from app.results import (
+    CUSTOM_METRICS,
+    UnknownMetricError,
+    analyze_experiment,
+    metric_series,
+    resolve_metric,
+)
 from app.stats import required_sample_size
 
 from app.registry import (
@@ -56,7 +62,18 @@ from app.metrics import (
     summarize_experiment,
 )
 
-from app.models import ActiveVersion, Experiment, Prompt, PromptVersion, RequestLog, get_engine
+from app.models import (
+    ActiveVersion,
+    AuditLog,
+    Experiment,
+    JudgeRubric,
+    MetricScore,
+    Prompt,
+    PromptVersion,
+    RequestLog,
+    get_engine,
+)
+
 from app.registry import (
     DuplicatePromptError,
     MissingVariablesError,
@@ -333,8 +350,12 @@ def post_completion(
     # 5. The judge runs after the response is sent, so the caller never waits for it.
     #    It is skipped when it would grade its own model, and sampled by JUDGE_SAMPLE_RATE.
     if version.model != JUDGE_MODEL and should_judge(log.id, judge_rate):
+        # A rubric fixed per prompt means every variant is graded against the same standard.
+        # Without one, the judge grades each output against its own variant's instructions.
+        rubric = session.get(JudgeRubric, version.prompt_id)
+        judge_task = rubric.rubric if rubric is not None else system
         background_tasks.add_task(
-            run_judge, make_session, client, log.id, system, body.input, result.text
+            run_judge, make_session, client, log.id, judge_task, body.input, result.text
         )
 
     return CompletionOut(
@@ -689,3 +710,103 @@ def get_experiment_series(
         metric=name,
         variants=[VariantSeriesOut(**asdict(s)) for s in series],
     )
+
+# ---------------------------------------------------------------------------
+# Phase 7: fixed judge rubric and client-recorded metrics
+# ---------------------------------------------------------------------------
+
+
+class RubricBody(BaseModel):
+    rubric: str = Field(min_length=20)
+    actor: str
+    reason: str
+
+
+class RubricOut(BaseModel):
+    prompt_id: int
+    rubric: str | None
+
+
+class MetricIn(BaseModel):
+    metric: str
+    value: float
+    note: str | None = None
+
+
+class MetricPostedOut(BaseModel):
+    request_id: int
+    metric: str
+    value: float
+
+
+@app.put("/prompts/{prompt_id}/rubric", response_model=RubricOut)
+def put_rubric(
+    prompt_id: int, body: RubricBody, session: Session = Depends(get_db)
+) -> RubricOut:
+    if session.get(Prompt, prompt_id) is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"prompt {prompt_id} not found")
+    row = session.get(JudgeRubric, prompt_id)
+    if row is None:
+        row = JudgeRubric(prompt_id=prompt_id, rubric=body.rubric)
+        session.add(row)
+    else:
+        row.rubric = body.rubric
+    session.add(
+        AuditLog(
+            actor=body.actor,
+            action="set_rubric",
+            prompt_id=prompt_id,
+            details={"reason": body.reason, "characters": len(body.rubric)},
+        )
+    )
+    session.flush()
+    return RubricOut(prompt_id=prompt_id, rubric=row.rubric)
+
+
+@app.get("/prompts/{prompt_id}/rubric", response_model=RubricOut)
+def get_rubric(prompt_id: int, session: Session = Depends(get_db)) -> RubricOut:
+    if session.get(Prompt, prompt_id) is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"prompt {prompt_id} not found")
+    row = session.get(JudgeRubric, prompt_id)
+    return RubricOut(prompt_id=prompt_id, rubric=row.rubric if row else None)
+
+
+@app.post(
+    "/requests/{request_id}/metrics",
+    response_model=MetricPostedOut,
+    status_code=status.HTTP_201_CREATED,
+)
+def post_request_metric(
+    request_id: int, body: MetricIn, session: Session = Depends(get_db)
+) -> MetricPostedOut:
+    """Record a metric the caller measured, such as accuracy against a known label."""
+    if body.metric not in CUSTOM_METRICS:
+        raise HTTPException(
+            status.HTTP_400_BAD_REQUEST,
+            f"metric must be one of: {', '.join(sorted(CUSTOM_METRICS))}",
+        )
+    low, high = CUSTOM_METRICS[body.metric]
+    if not low <= body.value <= high:
+        raise HTTPException(
+            status.HTTP_400_BAD_REQUEST, f"{body.metric} must be between {low:g} and {high:g}"
+        )
+    if session.get(RequestLog, request_id) is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, f"request {request_id} not found")
+    already = session.scalar(
+        select(MetricScore.id).where(
+            MetricScore.request_id == request_id, MetricScore.metric == body.metric
+        )
+    )
+    if already is not None:
+        raise HTTPException(
+            status.HTTP_409_CONFLICT, f"{body.metric} is already recorded for request {request_id}"
+        )
+    session.add(
+        MetricScore(
+            request_id=request_id,
+            metric=body.metric,
+            value=body.value,
+            details={"note": body.note} if body.note else None,
+        )
+    )
+    return MetricPostedOut(request_id=request_id, metric=body.metric, value=body.value)

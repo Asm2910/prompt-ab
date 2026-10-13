@@ -25,6 +25,7 @@ TEAL, GREEN, AMBER = "#2DD4BF", "#34D399", "#FBBF24"
 VARIANT_COLORS = ["#60A5FA", "#F59E0B", "#A78BFA", "#F472B6", "#22D3EE", "#94A3B8"]
 
 METRICS = {
+    "accuracy": "Accuracy vs ground truth",
     "judge_quality": "Judge quality score (1-5)",
     "json_bare": "Bare JSON rate (no code fences)",
     "json_valid": "Valid JSON rate",
@@ -32,6 +33,7 @@ METRICS = {
     "cost_usd": "Cost per request (USD)",
     "output_tokens": "Output tokens",
     "input_tokens": "Input tokens",
+    "user_rating": "User rating (1-5)",
 }
 METRIC_ALIASES = {"quality": "judge_quality"}
 VERDICT_TEXT = {

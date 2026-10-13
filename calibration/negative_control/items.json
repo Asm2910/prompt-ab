@@ -1,0 +1,218 @@
+[
+ {
+  "kind": "real_right",
+  "request_id": 586,
+  "input": "can u add a pilates workout type pls",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer is requesting the addition of a pilates workout type to the application.\"}",
+  "id": "cal-001",
+  "judge_score": 5,
+  "judge_reasoning": "The email is a feature request that fits none of billing, technical or account, so 'general' is correct. The summary is a single accurate sentence, and the output is well-formed with both required fields."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 511,
+  "input": "dashboard wont load just spins forever",
+  "output": "```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer reports dashboard failing to load and continuously spinning.\"\n}\n```",
+  "id": "cal-002",
+  "judge_score": 5,
+  "judge_reasoning": "The dashboard not loading and spinning forever is a technical issue, so 'technical' is the correct category. The summary is one sentence and accurately captures the problem. The markdown code fence should be ignored."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 206,
+  "input": "Hi there, I'm trying to figure out how to share a folder with someone who doesn't have an account. Is there a way to generate a public link that expires after a few days? Thanks in advance for your help.",
+  "output": "The customer is asking about a feature for sharing folders with non-account holders and wants to know if they can create a public link with an expiration date. This is a question about how to use the product's features, which falls under a technical support issue.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer wants to know how to generate an expiring public link to share a folder with non-account users.\"\n}\n```",
+  "id": "cal-003",
+  "judge_score": 2,
+  "judge_reasoning": "Under the given definitions, technical covers errors, crashes and integrations. This email is a how-to question about sharing a folder via an expiring public link, which fits none of the named categories, so the correct category is general. The assistant chose technical by stretching the definition, so the category is wrong. The summary is accurate and one sentence."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 372,
+  "input": "Hello, I run a community of about 8,000 freelancers and would love to discuss a partnership or affiliate arrangement with you. Who is the right person to talk to? Unrelated, but the app crashed twice yesterday when I uploaded receipts. Not urgent. Best, Jordan Reyes",
+  "output": "{\"category\": \"technical\", \"summary\": \"App crashed twice when uploading receipts.\"}",
+  "id": "cal-004",
+  "judge_score": 2,
+  "judge_reasoning": "The first matter the customer raises is a partnership/affiliate inquiry, which is 'general'; the crash is mentioned second as 'unrelated'. The assistant chose 'technical', violating the first-problem rule, and its summary omits the main partnership request, though what it says is accurate."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 677,
+  "input": "Something is wrong with the player, it just doesn't work right lately. Sometimes it skips, sometimes it stutters, and sometimes it just quits on me. I don't know what else to tell you. By the way, can you also tell me how to change the email address on my profile?",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer requests a change of the delivery address for an order.\"}",
+  "id": "cal-005",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'technical' is correct, since the first problem stated is the player skipping, stuttering and quitting. The summary is wrong: it describes changing a delivery address for an order, which appears nowhere in the email. The email is about player malfunctions and a profile email change. Under the rubric, a correct category with a wrong summary scores 3."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 309,
+  "input": "love the new dark mode!! thx",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer asks how to export their data to a spreadsheet.\"}",
+  "id": "cal-006",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'general' is correct, since the email is just praise for dark mode and fits none of the other categories. The summary is fabricated: it says the customer asks about exporting data to a spreadsheet, which has nothing to do with the email. Under the rubric, a correct category with a wrong summary scores 3."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 441,
+  "input": "how do i save a search for later",
+  "output": "```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer is asking how to save a search for later use.\"\n}\n```",
+  "id": "cal-007",
+  "judge_score": 2,
+  "judge_reasoning": "The email is a how-to question with no error, crash or integration issue, so under the stated definitions it belongs in 'general', not 'technical'. The summary is accurate and one sentence, but the wrong category matches the rubric's 'wrong category with a reasonable summary'."
+ },
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 323,
+  "input": "Hey, I got a charge from you guys for $9.99 and honestly I don't remember signing up for anything paid. Can someone look into what this is and reverse it if it's a mistake? Also, unrelated, but the app keeps crashing whenever I open the sleep tracking screen.",
+  "output": "{\"category\": \"account\", \"summary\": \"Customer was charged $9.99 and doesn't recall signing up for a paid service; requests investigation and potential reversal.\"}",
+  "id": "cal-008",
+  "judge_score": 2,
+  "judge_reasoning": "The first problem stated is an unexpected $9.99 charge with a reversal request, so the category should be billing, but the assistant answered 'account'. The one-sentence summary is accurate for the billing issue, which fits the rubric's 'wrong category with a reasonable summary'."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 691,
+  "input": "Hi, I'm trying to figure out how to filter hotel results to only show places with free cancellation and a pool. I looked around the search page but can't find a filter for it. Also, unrelated, I noticed I was charged twice for my deposit on my Lisbon booking last week, so someone may want to look at that too.",
+  "output": "```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer cannot find filters for free cancellation and pool amenities on the search page.\"\n}\n```",
+  "id": "cal-009",
+  "judge_score": 2,
+  "judge_reasoning": "The first problem the customer states is how to find a hotel search filter. That is a how-to question, not an error, crash or integration issue, so the correct category is general. The assistant chose technical, which is wrong. The summary accurately describes the first problem, so this is a wrong category with a reasonable summary."
+ },
+ {
+  "kind": "corrupted_unusable",
+  "request_id": 697,
+  "input": "Hi team, every time I try to import my contact list from a CSV file, the page freezes and then shows 'Error 500: Internal Server Error'. I've tried Chrome and Firefox with the same result. Can you please look into this?",
+  "output": "I'm sorry, I can't help with that request.",
+  "id": "cal-010",
+  "judge_score": 1,
+  "judge_reasoning": "The task was to classify the email (clearly technical: Error 500 on CSV import) and write a one-sentence summary. The assistant refused with no category and no summary, so it gave no usable answer and ignored the instructions."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 568,
+  "input": "Hi team, does the tool support multiple currencies on a single invoice? I work with clients in the UK and Germany and I'd like to know before I move more of my workflow over. Cheers, Tomasz",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer asks if the tool supports multiple currencies on a single invoice.\"}",
+  "id": "cal-011",
+  "judge_score": null,
+  "judge_reasoning": "judge failed: invalid judge reply after retry: no JSON object found"
+ },
+ {
+  "kind": "real_right",
+  "request_id": 361,
+  "input": "api token keeps saying invalid even tho i just made it",
+  "output": "```json\n{\"category\": \"technical\", \"summary\": \"Customer's newly created API token is being rejected as invalid.\"}\n```",
+  "id": "cal-012",
+  "judge_score": 5,
+  "judge_reasoning": "The email reports an API token being rejected as invalid, which is an error or integration problem, so 'technical' is the best category. The summary is one accurate sentence that covers the key details: the token is newly created and is being rejected."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 337,
+  "input": "app keeps freezing when i open reports",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer reports that the app freezes when opening reports.\"}",
+  "id": "cal-013",
+  "judge_score": 5,
+  "judge_reasoning": "The email describes the app freezing, which is a crash-type problem and falls under technical. The assistant chose \"technical\" and wrote an accurate one-sentence summary. The output is a single clean JSON object."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 291,
+  "input": "is there a student discount or nah",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer is inquiring about student discount availability.\"}",
+  "id": "cal-014",
+  "judge_score": 4,
+  "judge_reasoning": "A student discount question concerns pricing and plans, so 'billing' is a reasonable category, though 'general' is also defensible for a pre-sales question. The summary is accurate, concise, and a single sentence. The slight category ambiguity keeps this from a full score."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 552,
+  "input": "need invoice for last month pls",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer requests an invoice for last month.\"}",
+  "id": "cal-015",
+  "judge_score": 5,
+  "judge_reasoning": "The email asks for an invoice, which falls under billing (charges, refunds, invoices and plans). The output gives category \"billing\" and a single accurate sentence summarizing the request, with no extra or missing details."
+ },
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 410,
+  "input": "Hello, I have been trying to log into my banking app all morning but it keeps saying my password is incorrect. I am sure I'm typing it right. Can you help me reset it? Thanks, Margaret Ellison",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer cannot log in and needs help resetting their password.\"}",
+  "id": "cal-016",
+  "judge_score": 2,
+  "judge_reasoning": "The email is about a login failure and a password reset, which the instructions place squarely under 'account'. The assistant chose 'general', so the category is wrong. The one-sentence summary is accurate and reasonable, which matches the rubric's 'wrong category with a reasonable summary'."
+ },
+ {
+  "kind": "corrupted_unusable",
+  "request_id": 413,
+  "input": "Dashboard takes like 45 seconds to load for our whole team. It was fine last week. Please advise, thanks. Priya",
+  "output": "I'm sorry, I can't help with that request.",
+  "id": "cal-017",
+  "judge_score": 1,
+  "judge_reasoning": "The assistant refused a harmless classification task and gave no category or summary. The email was clearly technical (slow dashboard load), so the output is unusable and ignores the instructions."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 473,
+  "input": "Hi there, I had a quick question about the profit figure in the reports tab. Not sure if I'm reading it right, does it include unpaid invoices or only money received? Also my password reset email never showed up earlier, though I eventually got in so it's fine now.",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer is confused about how profit figures are calculated in the reports tab and whether they include unpaid invoices.\"}",
+  "id": "cal-018",
+  "judge_score": 2,
+  "judge_reasoning": "The first problem stated is a question about how the profit figure in the reports tab is calculated. It is not an error, crash or integration problem, so 'technical' is wrong; 'general' fits best, and 'billing' is arguable because invoices are mentioned. The one-sentence summary accurately captures the first problem, so this is a wrong category with a reasonable summary."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 327,
+  "input": "Hi there, I just started using your app and I'm wondering how to set a weekly step goal. I can only find a daily goal option in the settings. Is a weekly goal possible? Thanks, Marcus",
+  "output": "The customer is asking about functionality in the app - specifically how to set a weekly step goal rather than a daily one. This is their primary concern, and it relates to using features of the application.\n\n```json\n{\n  \"category\": \"general\",\n  \"summary\": \"Customer is asking how to set a weekly step goal in the app, as they can only find the daily goal option.\"\n}\n```",
+  "id": "cal-019",
+  "judge_score": 5,
+  "judge_reasoning": "The email is a how-to/feature question that doesn't fit billing, technical, or account, so 'general' is correct. The one-sentence summary accurately captures the request and the context (only a daily goal found). Pre-JSON reasoning is ignored per instructions."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 329,
+  "input": "how do i change units to km",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer wants to know how to change measurement units to kilometers.\"}",
+  "id": "cal-020",
+  "judge_score": 2,
+  "judge_reasoning": "The email asks how to change a unit setting, which is a preference or settings question. It fits account (profile settings) or general, and it is not an error, crash or integration problem, so 'technical' is the wrong category. The one-sentence summary is accurate, so under the rubric a wrong category with a reasonable summary scores 2."
+ },
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 599,
+  "input": "forgot pasword, reset email not coming!!",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer forgot their password and is not receiving the password reset email.\"}",
+  "id": "cal-021",
+  "judge_score": 2,
+  "judge_reasoning": "The first problem stated is a forgotten password, so the correct category is account, but the assistant chose technical. The one-sentence summary is accurate and reasonable, so this matches the rubric's 'wrong category with a reasonable summary'."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 609,
+  "input": "Hello, I'd like to know how to add a custom domain to my storefront. Is there a step-by-step guide in the help center? I've just started setting up my shop and want to get it right.",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer is asking for instructions on how to add a custom domain to their storefront.\"}",
+  "id": "cal-022",
+  "judge_score": 3,
+  "judge_reasoning": "The email is a how-to question about finding a setup guide, with no error, crash, or integration problem, so 'general' is the best fit under the given definitions. 'Technical' is defensible because domain setup is a technical configuration task, but it is not the best category. The summary is accurate and one sentence."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 434,
+  "input": "cant update my credit card, expired one still on file",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer complains about the new logo and the website colours.\"}",
+  "id": "cal-023",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'billing' is a reasonable fit for a credit card update problem, though 'account' (profile settings) is arguable. The summary about a new logo and website colours has nothing to do with the email, so it is wrong. Under the task's scoring, a correct category with a wrong summary earns a 3."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 244,
+  "input": "Hey team, just some feedback. The analytics dashboard is great but it'd be really helpful if we could export reports to CSV and compare date ranges side by side. Not urgent at all. Oh, and the checkout page loaded really slowly for a few customers yesterday, not sure if that's on your end.",
+  "output": "The customer first mentions a feature request about the analytics dashboard (exporting to CSV and comparing date ranges), but then brings up a performance issue with the checkout page loading slowly. The checkout performance problem is a technical issue that needs investigation and could affect customer transactions, making it the primary concern that should be addressed first.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Checkout page loading slowly for customers; also requesting CSV export and date range comparison features for analytics dashboard.\"\n}\n```",
+  "id": "cal-024",
+  "judge_score": null,
+  "judge_reasoning": "judge failed: invalid judge reply after retry: no JSON object found"
+ }
+]

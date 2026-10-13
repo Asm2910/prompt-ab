@@ -137,6 +137,15 @@ class MetricScore(Base):
     details: Mapped[dict[str, Any] | None] = mapped_column(JSON, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
+class JudgeRubric(Base):
+    """One fixed grading standard per prompt, shared by every variant of that prompt."""
+
+    __tablename__ = "judge_rubrics"
+
+    prompt_id: Mapped[int] = mapped_column(ForeignKey("prompts.id"), primary_key=True)
+    rubric: Mapped[str] = mapped_column(Text, nullable=False)
+
+    
 def get_engine() -> Engine:
     # Lazy so pytest can override get_db with in-memory SQLite and never open Postgres.
     global _engine

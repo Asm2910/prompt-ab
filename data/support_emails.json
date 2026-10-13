@@ -1,0 +1,3470 @@
+[
+ {
+  "text": "Hi, the app crashes every time I open the speaking practice module. I'm on an iPhone 13 running iOS 17.2 and have already tried reinstalling it. The crash happens right after the microphone permission pop-up appears.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 1
+ },
+ {
+  "text": "Good afternoon. The audio in my Spanish lessons won't play on the Android app. The waveform shows up but there is no sound at all, and my phone volume and other apps work fine. This started after the latest update.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 2
+ },
+ {
+  "text": "Hi, the thing isn't working right again. Same problem as last month where the sends just hang and nothing goes out, and nobody seems to know why. Honestly I'm also still waiting on that refund you promised, but first I need this sorted.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 3
+ },
+ {
+  "text": "Hi, I run a small photography school and we'd love to explore a partnership with your company. Could you tell me who I should talk to about referral or reseller programs? Looking forward to hearing from you.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 4
+ },
+ {
+  "text": "Hi team, my sister used to share my family plan login and now I want to remove her access and change who the account admin is, since I'm the one paying. Separately, I noticed I was charged twice last month, so could someone look into that as well? Thanks, Daniel",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 5
+ },
+ {
+  "text": "why was i charged again after cancelling??",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 6
+ },
+ {
+  "text": "Our school uses your API to pull student progress into our LMS, and since Monday every request returns a 401 Unauthorized even though our API key hasn't changed. Can someone from your developer team check whether the key was invalidated? We have 200 students waiting on their reports.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 7
+ },
+ {
+  "text": "Dashboard takes like 2 mins to load wtf",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 8
+ },
+ {
+  "text": "Hi there, I recently got a new phone number and need to update it on my profile. I can't find where to change it in the settings menu. Can you walk me through the steps?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 9
+ },
+ {
+  "text": "Hi there,\n\nI'm new to your platform and wondering how I can schedule a campaign to go out at a specific time in my subscribers' local time zones. Is that a feature you offer? Thanks in advance for the help.\n\nBest,\nMaria Gonzalez",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 10
+ },
+ {
+  "text": "My coworker needs edit access to our shared team folder but she only has view permissions. I'm the admin of the account. How do I change her role? Thanks, Priya",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 11
+ },
+ {
+  "text": "Hi, not sure who to ask about this but I'm trying to figure out the best way to set up automations for a welcome series, since I'm kind of lost on where to start. Oh and the login page was slow for me yesterday, but no big deal. Any guidance on the welcome series would be great.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 12
+ },
+ {
+  "text": "need refund pls charged after i cancelled",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 13
+ },
+ {
+  "text": "do you have a mobile app or just the website",
+  "difficulty": "short",
+  "category": "general",
+  "id": 14
+ },
+ {
+  "text": "I want to permanently delete my account and all of my personal data. I no longer use the app and would like everything removed. Please confirm once the deletion is complete.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 15
+ },
+ {
+  "text": "Good afternoon. Every time I try to sync my progress between my tablet and my laptop, I get a 'Sync error: token invalid' message. My streak and completed lessons aren't showing up on the other device. Please look into this as soon as you can.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 16
+ },
+ {
+  "text": "Hello, I run a community of about 8,000 freelancers and would love to discuss a partnership or affiliate arrangement with you. Who is the right person to talk to? Unrelated, but the app crashed twice yesterday when I uploaded receipts. Not urgent. Best, Jordan Reyes",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 17
+ },
+ {
+  "text": "Hello, I get an 'Error 503: Service Unavailable' message whenever I try to sync my progress between my phone and my laptop. It has been happening since Monday. My streak is not updating because of it.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 18
+ },
+ {
+  "text": "Just wanted to say thank you. The new drag and drop template builder saved me hours this week. Great job to the whole team, I'll be recommending you to other small business owners I know.\n\nCheers,\nDana",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 19
+ },
+ {
+  "text": "Hey, I upgraded to the Business plan last week and was charged $240, but the pricing page said $180 per year for 5 users. Can someone explain the difference and fix it? Also, while I have you, the desktop sync app has been crashing on startup since the last update.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 20
+ },
+ {
+  "text": "how do i add a custom workout",
+  "difficulty": "short",
+  "category": "general",
+  "id": 21
+ },
+ {
+  "text": "Good afternoon. I think someone else has accessed my account because I got a login alert from a country I've never been to. I need to secure my account right away and sign out all other devices. What should I do?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 22
+ },
+ {
+  "text": "Hi team, every time I try to upload a product image larger than 2MB, the dashboard shows a '500 Internal Server Error' and the page freezes. I've tried Chrome and Firefox with the same result. Could you look into this? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 23
+ },
+ {
+  "text": "love the new dashboard, great work",
+  "difficulty": "short",
+  "category": "general",
+  "id": 24
+ },
+ {
+  "text": "subtitels wont load on any episode, so annoying",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 25
+ },
+ {
+  "text": "Good afternoon, I run a small chain of yoga studios in Portland and we'd love to discuss a partnership with your app. Could you tell me who to contact about co-branded challenges for our members? Best regards, Marisol Vega",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 26
+ },
+ {
+  "text": "luv the app, thx guys",
+  "difficulty": "short",
+  "category": "general",
+  "id": 27
+ },
+ {
+  "text": "charged twice this month pls fix",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 28
+ },
+ {
+  "text": "pls delete my acount asap",
+  "difficulty": "short",
+  "category": "account",
+  "id": 29
+ },
+ {
+  "text": "need refund, didnt mean to renew",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 30
+ },
+ {
+  "text": "Hey, I think someone else logged into my account yesterday, I got a weird login alert from a country I've never been to and now my password doesn't work. I need to lock it down. Also, unrelated, but I noticed my last invoice PDF has the wrong font, which is a bit annoying.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 31
+ },
+ {
+  "text": "api returns 403 on every call since this morning",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 32
+ },
+ {
+  "text": "Good afternoon. I never got the verification email after changing my login address, so now I'm locked out of my profile entirely. This has been going on for days and it's really frustrating. By the way, my last order is also still showing as 'processing' even though it was supposed to ship Monday.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 33
+ },
+ {
+  "text": "Hey, the Zapier webhook for new tasks has been returning a 403 error since your update on Tuesday, so all our automations are dead. We haven't changed any credentials on our end. Also, while I'm writing, could you tell me whether I'm still being charged for the 3 seats we removed last month? The invoice seems higher than expected.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 34
+ },
+ {
+  "text": "Hi, something seems off with what I got billed recently, can you look into it? Not sure if it's the plan or something else. Also I can't seem to reset my password using the link, it just says expired. Thanks, Jun",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 35
+ },
+ {
+  "text": "Something is wrong with the player, it just doesn't work right lately. Sometimes it skips, sometimes it stutters, and sometimes it just quits on me. I don't know what else to tell you. By the way, can you also tell me how to change the email address on my profile?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 36
+ },
+ {
+  "text": "Hello, I recently got a new email address and would like to update the one linked to my account. My old address is being closed next week. Please let me know how to change it.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 37
+ },
+ {
+  "text": "The mobile app is extremely slow. Loading my expense list takes over a minute on both my phone and tablet. It was fine until the last update, so something must have broken. Please fix this soon.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 38
+ },
+ {
+  "text": "Hello, what are your customer support hours on weekends? I'd like to know whether I can reach a live agent on Saturday or if I should email instead.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 39
+ },
+ {
+  "text": "Quick question, is there a way to split a single expense between two projects? Right now I'm doing it manually with notes and it's a mess. Oh and at some point I'll probably need to change the email address on my account, but no rush on that one.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 40
+ },
+ {
+  "text": "locked out pls help",
+  "difficulty": "short",
+  "category": "account",
+  "id": 41
+ },
+ {
+  "text": "Hello, I connected my Stripe account yesterday but my payments are not syncing into the dashboard. It just shows 'Error 502: Bad Gateway' when I click refresh. I'd appreciate any help getting this fixed.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 42
+ },
+ {
+  "text": "does it work on linux",
+  "difficulty": "short",
+  "category": "general",
+  "id": 43
+ },
+ {
+  "text": "Hi team, I changed my phone number last week and now the app won't let me sign in because the verification code goes to my old number. I need to update my profile details so I can get back in. By the way, I was also charged a $5 monthly fee that I don't remember agreeing to, so maybe someone can look at that after.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 44
+ },
+ {
+  "text": "I just wanted to say thank you. After three months with your app I held my first real conversation in French with a coworker. The speaking exercises with voice recognition are fantastic. Please keep up the great work!\n\nBest, Tomasz",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 45
+ },
+ {
+  "text": "Hello,\n\nWhat are your customer support hours? I'm based in Sydney and want to know when I can reach someone live. Thank you.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 46
+ },
+ {
+  "text": "Hey, so something's off with my account. I see a charge on my card from you but honestly I'm not sure what it's for, I only use the free tier I think? Can someone explain what I'm being billed for? Also my shared folder links stopped working this morning.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 47
+ },
+ {
+  "text": "Hi, I'm not totally sure how the whole workspace vs. project thing is supposed to work in your tool. Is there a guide or something that explains how people usually organize things? I feel like I'm missing something obvious. By the way, my password reset email took forever to arrive last week, but I got in eventually.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 48
+ },
+ {
+  "text": "Overall I really like the dashboard layout and the quick invoice templates, nice work. One suggestion: let us customize the template colors to match our branding. By the way, the mobile app crashed on me yesterday when I tried to upload a receipt, and it happened twice.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 49
+ },
+ {
+  "text": "Hello, I wanted to ask what your customer service hours are on weekends. I tried calling on Saturday afternoon and nobody picked up. Could you let me know when a live agent is available? Thanks, Marcus Webb",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 50
+ },
+ {
+  "text": "cant reset my password link expired again",
+  "difficulty": "short",
+  "category": "account",
+  "id": 51
+ },
+ {
+  "text": "do you guys have a zapier integration??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 52
+ },
+ {
+  "text": "Good afternoon, could you send me a PDF invoice for my last three monthly payments? I need them for my company's expense report. Please send them to the email on file. Regards, Helen Okafor",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 53
+ },
+ {
+  "text": "Hi there, could you tell me whether the app supports Apple Watch? I'd love to check my balance from my wrist. Also, unrelated, but I noticed a $14.99 charge from a streaming service I cancelled last month, and I'm not sure how to get that sorted. Thanks, Dana",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 54
+ },
+ {
+  "text": "Hey, I'd like to know how to segment my list by who opened the last three emails. I've looked through the help docs but couldn't find a clear walkthrough, and I'm not sure if this is even possible on my plan. Also, unrelated, I noticed I was charged $49 on the 3rd and I thought my plan was $39, so could someone check that too?\n\nThanks,\nLena",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 55
+ },
+ {
+  "text": "Something is wrong with the money you took from my account, the amount doesn't match what I was promised when I signed up in January. Please sort it out. Also it would be great if you added more Korean lessons for beginners someday.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 56
+ },
+ {
+  "text": "Hi team, does the tool support multiple currencies on a single invoice? I work with clients in the UK and Germany and I'd like to know before I move more of my workflow over. Cheers, Tomasz",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 57
+ },
+ {
+  "text": "site wont load products page just spins forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 58
+ },
+ {
+  "text": "Hi there,\n\nI'm setting up our team's workspace and wondering whether your app lets me create recurring tasks that repeat every other Monday. If so, could you point me to where that setting lives? Thanks in advance!\n\nBest,\nMarcus",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 59
+ },
+ {
+  "text": "Hi, I recently got a new email address and want to update it on my profile. The old one is no longer active, so I can't receive any verification codes. Please let me know how to change it.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 60
+ },
+ {
+  "text": "app crashes when i open the gantt view",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 61
+ },
+ {
+  "text": "api returns 429 even tho im barely making requests",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 62
+ },
+ {
+  "text": "Hi there, I was charged $119.99 on March 3rd for an annual Premium subscription, but I only signed up for the monthly plan at $12.99. Could you please correct this and refund the difference? My account email is jenna.morris@example.com.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 63
+ },
+ {
+  "text": "Something's off with my profile and I can't get in properly. It keeps kicking me out whenever I try to sign in, and I'm not sure if it's my username or something else on my end. Anyway, my last transfer to my landlord also seems to be taking forever to go through.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 64
+ },
+ {
+  "text": "Hey, my card got declined when I tried to renew Premium today, but my bank says the money was actually taken out of my account. Can you check what happened and either activate my renewal or send the money back? Also, unrelated, the Spanish pronunciation exercises keep freezing on my phone.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 65
+ },
+ {
+  "text": "Hello, I've been locked out of my banking app since yesterday. I entered my password wrong three times and now it says my account is suspended. Could you please help me regain access?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 66
+ },
+ {
+  "text": "Our webhook for order.created events stopped firing two days ago. We haven't changed anything on our end and the endpoint returns 200 when tested manually. Can someone check the integration logs? Regards, Priya Raman",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 67
+ },
+ {
+  "text": "Hi, something is off with my last bill. The amount doesn't match what I was expecting based on what I was told when I upgraded, and I'm honestly not sure what I'm even paying for anymore. Can someone go over it with me? Thanks, Dennis",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 68
+ },
+ {
+  "text": "lessons wont load, white screen. pls fix",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 69
+ },
+ {
+  "text": "The drag and drop editor keeps crashing whenever I add an image block. I lose all my work each time. I'm using Safari on a MacBook, version 17.2.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 70
+ },
+ {
+  "text": "pls delete my account asap",
+  "difficulty": "short",
+  "category": "account",
+  "id": 71
+ },
+ {
+  "text": "Hello, I would like to change the email address linked to my account from my old work email to my personal Gmail. I no longer have access to the old one. Please let me know how I can do this.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 72
+ },
+ {
+  "text": "locked out again!! help",
+  "difficulty": "short",
+  "category": "account",
+  "id": 73
+ },
+ {
+  "text": "Hello, I just noticed that my last two monthly payments were taken twice from my card. Please refund the duplicate charges as soon as possible. My account email is priya.nair@designstudio.example.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 74
+ },
+ {
+  "text": "invoise for june missing from my account",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 75
+ },
+ {
+  "text": "Hi, I run a podcast network with about 40k listeners and we'd love to explore a partnership or affiliate arrangement with you. Who is the best person to talk to about that? Looking forward to hearing back.\n\nRegards,\nTom Eriksson",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 76
+ },
+ {
+  "text": "do you have a student discount for the 1tb plan?",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 77
+ },
+ {
+  "text": "I want to permanently delete my account and all the data attached to it. I no longer use your service. What steps do I need to follow to make sure everything is erased?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 78
+ },
+ {
+  "text": "Hello, could you tell me how to add a second traveler's frequent flyer number to an existing profile? I can't seem to find where that option is in my account settings. Any guidance would be appreciated.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 79
+ },
+ {
+  "text": "Hi, I'm trying to figure out how to filter hotel results to only show places with free cancellation and a pool. I looked around the search page but can't find a filter for it. Also, unrelated, I noticed I was charged twice for my deposit on my Lisbon booking last week, so someone may want to look at that too.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 80
+ },
+ {
+  "text": "Hi, I can't log into my account anymore. I keep getting an 'incorrect password' message even after I tried resetting it twice. The reset email never arrives in my inbox. Can you help me get back in? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 81
+ },
+ {
+  "text": "Videos buffer constantly even though my internet is fast. Speed test shows 300 Mbps and your service still drops to a blurry 240p and freezes. This happens only on your platform. Please look into it.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 82
+ },
+ {
+  "text": "Hello, I'm getting a 'Error 500: Internal Server Error' whenever I click on the Reports tab. It started this morning and I haven't changed anything on my end. Could you please look into it?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 83
+ },
+ {
+  "text": "Hi, I'd like a refund for my annual plan renewal that went through yesterday. I meant to cancel before it renewed and forgot. Part of the reason I wanted to cancel is that the bank sync has been failing with my credit union for weeks now, which has been really frustrating. Thanks, Devon",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 84
+ },
+ {
+  "text": "love the new dark mode!! thx",
+  "difficulty": "short",
+  "category": "general",
+  "id": 85
+ },
+ {
+  "text": "Hello team, uploads of files larger than 2GB keep failing at around 90% with a 'network timeout' error. My internet connection is fine and other sites work normally. Can you look into what's going on?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 86
+ },
+ {
+  "text": "forgot my password help",
+  "difficulty": "short",
+  "category": "account",
+  "id": 87
+ },
+ {
+  "text": "Hey team, I've been using the app for a while and have some thoughts. The lessons are good but I wish there were more listening exercises with different accents, like Scottish or Australian English. Not sure if that's on your roadmap? Oh and sometimes the app freezes for a second when I open the vocabulary tab, but it's not a big deal.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 88
+ },
+ {
+  "text": "Hi, is there a way to see my sleep data alongside my workouts on one screen? I've been poking around the dashboard and can't find a combined view. Also, unrelated, but I noticed I was charged $9.99 twice last month, so could someone look into that after answering?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 89
+ },
+ {
+  "text": "Hi, every time I try to play any show on my Samsung smart TV, the app crashes back to the home screen after about 10 seconds. I've already reinstalled the app and restarted the TV. Can you please help me fix this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 90
+ },
+ {
+  "text": "Good afternoon, the discount code field at checkout throws a JavaScript error 'Cannot read properties of undefined' and blocks the payment button from activating. Customers can't complete purchases at all. By the way, could you also tell me how to change the name on my invoice to our new company name? Regards, Elena Voss",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 91
+ },
+ {
+  "text": "Hi, I can't log in to my account anymore. I keep getting an 'incorrect password' error even though I'm sure I'm typing it correctly. I tried the reset link but the email never arrives. Please help.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 92
+ },
+ {
+  "text": "Good afternoon. Since the update last week, the mobile app closes itself immediately after I log in on my Pixel 7. I've reinstalled it twice with no luck. Could you tell me what's going on?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 93
+ },
+ {
+  "text": "do u have student discount for the pro plan",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 94
+ },
+ {
+  "text": "Hi there, I'm setting up my shop on your platform and wanted to know if there's a way to schedule products to go live at a specific date and time. I couldn't find it in the product editor. Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 95
+ },
+ {
+  "text": "calendar sync with google broken again, events not showing",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 96
+ },
+ {
+  "text": "Our Stripe integration stopped syncing payments three days ago. New payments don't show up in my dashboard anymore, and I've already tried disconnecting and reconnecting the account. Can you help me figure out what's wrong?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 97
+ },
+ {
+  "text": "Something is off with the app lately. It's super sluggish, menus take forever to respond and sometimes things just don't work right. Not sure what's going on but it's been like this for about a week.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 98
+ },
+ {
+  "text": "My credit card expired and I got an email saying my payment failed. How do I update my payment method so my subscription doesn't get cancelled? I'm on the Starter plan and use it daily for client invoicing.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 99
+ },
+ {
+  "text": "Hey, I was wondering whether your tool can track mileage for my delivery gigs? I couldn't find anything about it in the help docs. Also, unrelated, I think I might have been charged twice last month, but I'll check my bank statement first and get back to you.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 100
+ },
+ {
+  "text": "Hi, my daughter uses my family plan but she can't access her profile anymore, it says she doesn't have permission and only I can see the settings. I need to give her access again. Also I was charged twice this month, can you check that as well?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 101
+ },
+ {
+  "text": "delete my acount asap thx",
+  "difficulty": "short",
+  "category": "account",
+  "id": 102
+ },
+ {
+  "text": "Hey, the app has become super laggy over the last few days. Every lesson takes like 30 seconds to load and sometimes it just times out with a network error even though my wifi is fine. Also, while I'm writing, I think I was charged twice for my subscription this month, can someone check that too?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 103
+ },
+ {
+  "text": "Good afternoon, I run a small travel blog with about 40,000 monthly readers and I'm interested in discussing an affiliate partnership with your company. Who would be the right person to contact about this? I'd be happy to share my traffic stats.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 104
+ },
+ {
+  "text": "Hi, I'm new to the app and wondering how to set up a recurring invoice for a monthly retainer client. Is there a way to automate that so I don't have to create it by hand every month? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 105
+ },
+ {
+  "text": "Just wanted to say thank you. Your new dashboard layout is fantastic and has saved me so much time managing my product listings. Please pass this along to the design team. Keep up the great work!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 106
+ },
+ {
+  "text": "Hello, I wanted to give some feedback: it would be really helpful if the analytics page let us compare two date ranges side by side. Right now I have to export everything to a spreadsheet. By the way, my login sometimes fails on the first try and I have to reset my password, which is annoying.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 107
+ },
+ {
+  "text": "Hello, I've been using your service for a while and had some thoughts about how the whole thing works, mainly the organization side of things. It's hard to explain, but could someone walk me through the best way to set things up? I've also gotten a couple of emails about my storage that confused me.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 108
+ },
+ {
+  "text": "Good afternoon. Our accounting department needs a VAT invoice for our Business plan payment from last month. It must show our company name, Kestrel Logistics GmbH, and our VAT ID. Can you send a corrected invoice?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 109
+ },
+ {
+  "text": "love the new dark mode, great job",
+  "difficulty": "short",
+  "category": "general",
+  "id": 110
+ },
+ {
+  "text": "Hi there, the app crashes every time I open the speaking practice lesson on my iPhone 14. I've reinstalled it twice and it still closes right after the microphone permission prompt. Can you help me fix this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 111
+ },
+ {
+  "text": "Hey team, love the new dashboard redesign, honestly much cleaner than before. One suggestion: it'd be great to have a dark mode option. Oh and my last payout still hasn't arrived and it's been over a week.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 112
+ },
+ {
+  "text": "Hello, the Slack integration stopped posting task updates to our channel yesterday. I reconnected the workspace twice and it still shows 'connected' but nothing arrives. We rely on these notifications daily.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 113
+ },
+ {
+  "text": "My credit card expires next month and I want to switch my subscription to a new card before the renewal on the 15th. Where do I change the payment method? I don't want my plan to lapse.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 114
+ },
+ {
+  "text": "speech recognition not working at all?? mic is fine",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 115
+ },
+ {
+  "text": "Hello, how do I set up a recurring invoice for a client who pays me every month? I looked through the menus but couldn't find the option anywhere. Regards, Daniel Okafor",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 116
+ },
+ {
+  "text": "Hello, the mobile app on my iPhone crashes immediately after I open it. I've already reinstalled it twice and restarted my phone. I'm running iOS 17.4 and app version 3.2.1.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 117
+ },
+ {
+  "text": "Hi, my credit card expired last week and I want to update my payment method before my next billing date on the 15th. I can't find where to enter the new card details. Can you point me to the right page?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 118
+ },
+ {
+  "text": "luv the new theme editor, thx!!",
+  "difficulty": "short",
+  "category": "general",
+  "id": 119
+ },
+ {
+  "text": "app keeps crashing when i open photos",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 120
+ },
+ {
+  "text": "Hello, I see two identical charges of $49.00 from your app on March 3rd on my statement. I only signed up for one annual plan. Please reverse the duplicate payment as soon as possible.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 121
+ },
+ {
+  "text": "refund me!! charged twice this month",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 122
+ },
+ {
+  "text": "Hey team, I'm wondering whether your platform supports selling digital downloads like PDFs and presets, or if it's physical products only. I'd really like to know before I commit to a plan. Also, unrelated, but I was charged twice for my last month's subscription, so can someone look into that too?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 123
+ },
+ {
+  "text": "Hi there, I'm setting up my first store on your platform and wanted to know what hours your phone support is available. I'm in the Pacific time zone, so I want to make sure I can reach someone during my workday. Thanks!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 124
+ },
+ {
+  "text": "how do i change units to km",
+  "difficulty": "short",
+  "category": "general",
+  "id": 125
+ },
+ {
+  "text": "Hello, something is off with my login. I used to get in fine but now it keeps bouncing me back to the sign-in page and my details don't seem to be recognized, or maybe they changed? Not sure what happened. Can you look into it and tell me what's going on?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 126
+ },
+ {
+  "text": "How do I turn on dark mode in the app? I couldn't find it in the settings menu. Appreciate any help, Priya",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 127
+ },
+ {
+  "text": "I want to permanently delete my account. I no longer use your bank and would like all my personal data removed. Please let me know what steps I need to take.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 128
+ },
+ {
+  "text": "cant login says password wrong",
+  "difficulty": "short",
+  "category": "account",
+  "id": 129
+ },
+ {
+  "text": "Hi team, my account seems to be messed up since I switched jobs, not sure what's going on but I can't get in the way I used to and things look different. Can someone take a look?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 130
+ },
+ {
+  "text": "Dashboard takes like 45 seconds to load for our whole team. It was fine last week. Please advise, thanks. Priya",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 131
+ },
+ {
+  "text": "why was i charged 5 bucks for monthly fee??",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 132
+ },
+ {
+  "text": "Hello, I would like to change the email address on my profile from my old work address to my personal Gmail. I no longer have access to the old one. Please let me know what steps I need to take.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 133
+ },
+ {
+  "text": "Hi there, I just started using your app and I'm wondering how to set up a custom weekly step goal. I only see the default 10,000 option in settings. Could you point me to where I can change it? Thanks!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 134
+ },
+ {
+  "text": "black screen when i hit play, sound works tho",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 135
+ },
+ {
+  "text": "cant reset my password link expired",
+  "difficulty": "short",
+  "category": "account",
+  "id": 136
+ },
+ {
+  "text": "Hi team, every time I try to export my monthly invoices to PDF the app freezes and then crashes. I've tried on Chrome and Firefox with the same result. I'm on the latest version and need these for a client by Friday.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 137
+ },
+ {
+  "text": "I want to permanently delete my account and all my data. Please tell me how to do this or just do it for me. Thank you, Priya Nair.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 138
+ },
+ {
+  "text": "how do i turn on dark mode?",
+  "difficulty": "short",
+  "category": "general",
+  "id": 139
+ },
+ {
+  "text": "cant update my credit card, expired one still on file",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 140
+ },
+ {
+  "text": "Hi, I think someone else logged into my account last night because I got a login alert from a country I've never been to. I need to lock it down and enable two-factor authentication ASAP. Also, while you're at it, it would be great if the Gantt chart view could support exporting to PDF someday.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 141
+ },
+ {
+  "text": "Your API is returning 429 rate limit errors even though we're only making about 20 requests a minute, well under the documented limit of 100. We're using the /v2/tasks endpoint with a standard API token. Please check whether our account is being throttled incorrectly.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 142
+ },
+ {
+  "text": "The admin panel is incredibly slow today. Pages take over 30 seconds to load, and the product list sometimes times out completely. It was fine last week. Please investigate.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 143
+ },
+ {
+  "text": "Something is off with the app today. Exercises won't submit, I tap the button and nothing happens, and then my progress bar looks wrong afterwards. By the way, do you plan to add Korean at some point? I'd love that.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 144
+ },
+ {
+  "text": "how do i change my email on my acount",
+  "difficulty": "short",
+  "category": "account",
+  "id": 145
+ },
+ {
+  "text": "app keeps freezing on my ipad",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 146
+ },
+ {
+  "text": "Hello, I recently got a new email address and would like to update the one linked to my profile. The old one at jsmith@oldmail.com will be deleted soon. How do I change it in my account settings?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 147
+ },
+ {
+  "text": "Hi, I can't log into my account anymore. I keep getting an 'incorrect password' error even though I'm sure I'm typing it right. I tried the reset link but the email never arrives. Can you help me get back in?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 148
+ },
+ {
+  "text": "Thanks for the quick help last time, you guys rock!",
+  "difficulty": "short",
+  "category": "general",
+  "id": 149
+ },
+ {
+  "text": "locked out of my acount pls help",
+  "difficulty": "short",
+  "category": "account",
+  "id": 150
+ },
+ {
+  "text": "Hi, something is off with my account and I think it's about money. There's a charge I don't recognize on my statement from your company and I'm not sure which of my plans it relates to. Can you look into it? I also forgot my security question answers, so I might need help logging in to check.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 151
+ },
+ {
+  "text": "does it export to csv or just pdf",
+  "difficulty": "short",
+  "category": "general",
+  "id": 152
+ },
+ {
+  "text": "I want to permanently delete my account and all my data. Please confirm what steps I need to take. I no longer use the service and want everything removed.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 153
+ },
+ {
+  "text": "Good afternoon. Could you send me a PDF invoice for my last three payments? I need them for my company's expense report, and the invoice must include our business name, Alvarez & Sons Ltd. Thanks in advance.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 154
+ },
+ {
+  "text": "Hey, is there a way to see version history for files? Not urgent, just curious how far back it goes. Also, unrelated, but I noticed I was charged $9.99 on the 3rd and I thought my plan was $8.99, so could someone look into that when they get a chance?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 155
+ },
+ {
+  "text": "My payment keeps getting declined when I try to upgrade to Premium even though my card works everywhere else, so I can't get access to the plans I paid for. Maybe it's related, but I'd also love a dark mode option someday.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 156
+ },
+ {
+  "text": "does it track swimming?? thx",
+  "difficulty": "short",
+  "category": "general",
+  "id": 157
+ },
+ {
+  "text": "Hello, I need to remove my former assistant Daniel's access to my workspace right away since he left the company. After that, could you also tell me whether the Pro plan includes recurring invoices? I'm thinking of upgrading next month.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 158
+ },
+ {
+  "text": "app keeps crashing when i open invoices",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 159
+ },
+ {
+  "text": "Something is off with my account, I don't think it's mine anymore? The name on the profile is different and my streak is gone, and I don't recognize the email listed. Not sure what to do, please advise.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 160
+ },
+ {
+  "text": "Hi there, my student discount seems to have vanished from my bill this month and now I'm paying full price again. I verified my enrollment back in September so I'm not sure what happened. Separately, the app also crashes on my Roku every time I try to open the settings page.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 161
+ },
+ {
+  "text": "do you guys have a mobile app for sellers",
+  "difficulty": "short",
+  "category": "general",
+  "id": 162
+ },
+ {
+  "text": "Our Roku integration stopped syncing my watch history across devices after I linked my account, and the Roku app throws an 'unable to connect to server' message each time I open it. Not sure if it's related, but I'd also love a way to get a student discount if one exists.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 163
+ },
+ {
+  "text": "how do i export my workout history",
+  "difficulty": "short",
+  "category": "general",
+  "id": 164
+ },
+ {
+  "text": "Something is off with the web interface. Pages load weirdly, thumbnails don't show up and sometimes the download button just does nothing. Not sure if it's my browser or your side. Oh and I'd also love a way to get a discount for our nonprofit if one exists.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 165
+ },
+ {
+  "text": "Hey, not sure who to ask but is there some way to get notified about stuff? Like the app doing things I should know about. Also my card arrived late last time, kinda annoying. Sam",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 166
+ },
+ {
+  "text": "Hey, I'm getting a 'Invalid token' error whenever I call the /v2/expenses endpoint from my script. My API key was generated this morning and I double checked that it's copied correctly. The docs say the token should last 24 hours, so I don't understand what's wrong. Please advise.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 167
+ },
+ {
+  "text": "Hello, the checkout page on my store has been crashing since this morning. Customers see a blank white screen after clicking 'Place Order'. This is urgent as we're losing sales.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 168
+ },
+ {
+  "text": "why was i charged again after cancelling",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 169
+ },
+ {
+  "text": "Hi there, I can't log in to my account anymore. Every time I enter my password it says 'incorrect credentials,' but I'm sure I'm typing it right. Could you help me reset it? My username is marta_lingua.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 170
+ },
+ {
+  "text": "how do i change my username pls",
+  "difficulty": "short",
+  "category": "account",
+  "id": 171
+ },
+ {
+  "text": "Hey, my teammate Priya needs admin rights on our workspace but I can't find where to give her permissions. I'm the owner of the account. Can you point me to the right setting?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 172
+ },
+ {
+  "text": "do you guys have a mobile app for managing orders?",
+  "difficulty": "short",
+  "category": "general",
+  "id": 173
+ },
+ {
+  "text": "Hey, the mobile app on my iPhone freezes whenever I try to attach a photo to a comment, and I have to force quit it every time. This started after the latest update. Also, unrelated, but I was wondering if you offer discounts for nonprofits since we're thinking of adding more seats.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 174
+ },
+ {
+  "text": "Hello, I run a small marketing agency and we'd love to explore a partnership with your platform. We work with lots of small retailers who need store setup help. Who should I contact about a referral or affiliate program?",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 175
+ },
+ {
+  "text": "dashboard takes like 2 mins to load now??",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 176
+ },
+ {
+  "text": "Hi, my card was declined when I tried to renew my yearly plan, even though the same card works everywhere else and has plenty of funds. I'd like to know why the payment keeps failing. Also, while I'm writing, the Spanish pronunciation exercises in the app have been cutting off my microphone input halfway through each sentence.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 177
+ },
+ {
+  "text": "Hey, does the app have a Gantt chart feature, or is that only on the higher tier? I've been looking around the menus and can't find it anywhere. Also, unrelated, but I think I was charged twice for my subscription last month, can someone check that too?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 178
+ },
+ {
+  "text": "Good morning. When I use the REST API to create a task with a custom field via POST /v2/tasks, I get a 400 error saying 'invalid field type', even though the payload matches your documentation exactly. I've attached the request body. Please advise as this is blocking our automation script.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 179
+ },
+ {
+  "text": "Hello, I keep getting error code 4502 whenever I press play on a movie. It started yesterday and happens on both my laptop and my phone. Please let me know what is causing this.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 180
+ },
+ {
+  "text": "Hey, my card got declined when I tried to upgrade to the Business plan even though there's plenty of money on it. Can you check what's going on with the payment? Also, once that's sorted, the product import tool keeps freezing on me when I upload my CSV file.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 181
+ },
+ {
+  "text": "Something is off with the webhooks. Some subscriber events come through to our server and others just never arrive, and I can't find any pattern. My developer says our endpoint is fine and returns 200 every time. Also, how do I update the billing email on file?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 182
+ },
+ {
+  "text": "Hi, the QuickBooks integration disconnects itself every few hours and I have to re-authorize it each time, which is really disrupting my workflow. Logs show 'OAuth refresh failed'. Separately, I'd love a feature where I can set custom invoice numbering, if that's ever on your roadmap. Thanks!",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 183
+ },
+ {
+  "text": "bank feed not importin anything since monday",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 184
+ },
+ {
+  "text": "Hi, the mobile app on my Android freezes whenever I try to attach a photo to a comment, and I have to force close it each time. This has happened on both my phone and tablet. Separately, I was charged twice this month and would like a refund for one of the charges.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 185
+ },
+ {
+  "text": "Hi, my employee Dana can't access the admin dashboard of our shop account anymore. I was the one who gave her manager permissions last month, and now they seem to be gone. Can you restore her access? Also, while you're at it, our last invoice shows the wrong VAT amount.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 186
+ },
+ {
+  "text": "Good afternoon, I'd like to know whether you offer a discount for nonprofit organizations on the Business plan. We are a small animal shelter with 6 staff members and would need about 2TB of storage. Please send pricing details when you can.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 187
+ },
+ {
+  "text": "Things have been really glitchy lately, pages half load and buttons don't respond sometimes. Kind of hard to describe honestly, it just feels broken since the weekend. Also the new pricing page confuses me a bit but that's secondary.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 188
+ },
+ {
+  "text": "Hi, can you tell me how the daily goal feature works and whether I can change the number of minutes? I set it to 10 but I'd like 20. Also, unrelated, I was charged twice for my subscription this month and need that looked at too.\n\nThanks, Priya",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 189
+ },
+ {
+  "text": "Hello! I wanted to say thank you to the whole team. Your app helped me stay consistent and I've lost 15 pounds in four months. The streak feature really keeps me motivated. Keep up the great work!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 190
+ },
+ {
+  "text": "Hey team, my access to the Marketing board disappeared this morning and I'm now only a 'viewer' even though I was an editor yesterday. Nobody told me about any change. Also the mobile app has been a bit laggy lately, not sure if related.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 191
+ },
+ {
+  "text": "is there a student discount or nah",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 192
+ },
+ {
+  "text": "app keeps freezing when i open gantt view",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 193
+ },
+ {
+  "text": "cant login says account locked??",
+  "difficulty": "short",
+  "category": "account",
+  "id": 194
+ },
+ {
+  "text": "Good afternoon, I run a local yoga studio with about 200 members and I'd love to explore a partnership with your app. We could offer members a discounted premium trial in exchange for featuring our classes. Who should I speak with about this? Best regards, Priya Nair",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 195
+ },
+ {
+  "text": "Hello, I wanted to ask whether your app can sync with Garmin watches. I recently bought a Garmin Forerunner and would love to import my runs automatically. Please let me know if that is supported.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 196
+ },
+ {
+  "text": "do u have a branch open on sundays",
+  "difficulty": "short",
+  "category": "general",
+  "id": 197
+ },
+ {
+  "text": "Something is off with the store. Pages randomly show errors and sometimes the cart just empties itself. Not sure if it's the theme or your platform. Also I'd love to know if you have any plans for a loyalty points feature.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 198
+ },
+ {
+  "text": "Hi there, I had a quick question about the profit figure in the reports tab. Not sure if I'm reading it right, does it include unpaid invoices or only money received? Also my password reset email never showed up earlier, though I eventually got in so it's fine now.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 199
+ },
+ {
+  "text": "need refund for order 4471 pls",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 200
+ },
+ {
+  "text": "can i see my statements in the app?",
+  "difficulty": "short",
+  "category": "general",
+  "id": 201
+ },
+ {
+  "text": "cant login says wrong password",
+  "difficulty": "short",
+  "category": "account",
+  "id": 202
+ },
+ {
+  "text": "Hi, I can't log in to my account anymore. I've tried resetting my password three times, but the reset email never arrives. Could you please help me regain access? My username is maria_lopez88.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 203
+ },
+ {
+  "text": "audio wont play at all",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 204
+ },
+ {
+  "text": "Error 5003 on roku, cant watch anything pls fix",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 205
+ },
+ {
+  "text": "I would like to permanently delete my account. I've switched to a different bank and no longer need this app. Please let me know what the process is and confirm once my personal data has been removed.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 206
+ },
+ {
+  "text": "Hi team, every time I try to upload a PDF larger than 5MB to a task, the app shows 'Error 500: Internal Server Error'. I've tried Chrome and Firefox with the same result. Could you please look into this? I have a client deliverable due tomorrow.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 207
+ },
+ {
+  "text": "Hi team, I'd like to know if there's a way to export all my project data to a spreadsheet for reporting purposes. Our finance lead keeps asking for it. Separately, the mobile app crashed on me twice this week when I opened the calendar, in case that's useful to know.\n\nThanks,\nLena",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 208
+ },
+ {
+  "text": "Hello, I was charged $119.88 on March 3rd for an annual Premium plan, but I had selected the monthly option when I signed up. Could you please refund the difference and switch me back to monthly billing? Thank you, Marcus Delaney",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 209
+ },
+ {
+  "text": "Hi, I'm trying to figure out whether your platform supports selling digital downloads like PDFs and printable art. Is that a built-in feature or do I need an app for it? Also, unrelated, but I was charged twice for my subscription this month, so I'd like that looked at too.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 210
+ },
+ {
+  "text": "charged twice this month?? pls fix",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 211
+ },
+ {
+  "text": "cant login, just get white screen",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 212
+ },
+ {
+  "text": "Just wanted to say thank you. Your team made launching my shop so much easier than I expected. The onboarding videos were especially helpful, and I'll be recommending the platform to my friends who sell handmade goods.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 213
+ },
+ {
+  "text": "Hey, do you offer a discount if I pay for the whole year upfront instead of monthly? I'm a solo photographer and would like to save a bit. Let me know what the annual price would be. Thanks, Diego",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 214
+ },
+ {
+  "text": "api returning 429 errors constantly??",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 215
+ },
+ {
+  "text": "Hi there, I just started using your app and I'm wondering how to set a weekly step goal. I can only find a daily goal option in the settings. Is a weekly goal possible? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 216
+ },
+ {
+  "text": "Hi there, I was charged $29 on March 3rd even though I downgraded to the free plan on February 25th. Could you please refund the charge and confirm my subscription is now cancelled? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 217
+ },
+ {
+  "text": "cant log in forgot my password",
+  "difficulty": "short",
+  "category": "account",
+  "id": 218
+ },
+ {
+  "text": "Dashboard loading super slow today. Like 30 secs",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 219
+ },
+ {
+  "text": "Dear support team, I was told I would get a 20% discount on my first year of the Plus plan after using a referral code, but I was billed the full price. Can you apply the discount and refund the difference? Regards, Priya Nair",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 220
+ },
+ {
+  "text": "how do i update my credit card info",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 221
+ },
+ {
+  "text": "Hello, I noticed my invoice for this month shows two separate charges for the same 2TB plan. Can someone look into this and reverse the duplicate payment? Thank you.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 222
+ },
+ {
+  "text": "Something is off with my profile and I can't get in the way I used to. I tried a few things but nothing seems to work. Also the desktop sync app has been a bit slow lately, if that's related. Not sure what's going on, honestly. - Marcus",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 223
+ },
+ {
+  "text": "Hello, I have been trying to log into my banking app all morning but it keeps saying my password is incorrect. I am sure I'm typing it right. Can you help me reset it? Thanks, Margaret Ellison",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 224
+ },
+ {
+  "text": "Hey, so the campaign analytics page has been super slow for the past week, like 40 seconds to load a single report. Our whole team is seeing it, not just me. Also, unrelated, but I think I was charged twice on my last invoice, can someone check that too?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 225
+ },
+ {
+  "text": "Hey, I got a notification that my account was logged in from a new device and now I can't get in at all, it says my credentials are invalid. I need to regain access and lock it down. Also, while you're at it, I noticed I was charged twice on my last invoice, so could someone look at that too?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 226
+ },
+ {
+  "text": "app keeps freezing on lesson 3 pls fix",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 227
+ },
+ {
+  "text": "Hello, what are your support hours? I'm based in Sydney and want to know if I can reach someone during my working day. Regards, Priya",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 228
+ },
+ {
+  "text": "need refund pls, charged after i cancelled",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 229
+ },
+ {
+  "text": "I'm a student and saw that you offer a discount for students on your website. How do I apply it to my current subscription? I'm paying full price right now and would like to switch to the reduced rate if possible.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 230
+ },
+ {
+  "text": "api token keeps saying invalid even tho i just made it",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 231
+ },
+ {
+  "text": "how do i change the card on my acount",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 232
+ },
+ {
+  "text": "Dear support, my annual plan renewed yesterday for $119.99 even though I turned off auto-renew in January. I'd like a full refund and confirmation that auto-renew is really off. Separately, it would be great if you added more documentaries from the 1970s to the catalog. Best, Raymond Okoye",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 233
+ },
+ {
+  "text": "Hello, I'm confused about my latest bill. It says $48 but I thought my plan was $24 a month, and I don't remember adding anything. Can someone explain what I'm being charged for? Also, the mobile app crashed twice yesterday when I tried to open it, in case that's useful for your team. Thanks, Amara Okafor",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 234
+ },
+ {
+  "text": "Hi, I'm calling your REST API to list folder contents and since this morning I get a 500 Internal Server Error on every request to /v2/folders/list. Nothing changed on our side. Our integration has been down for two hours now.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 235
+ },
+ {
+  "text": "Hi, can you tell me how to set up automatic abandoned cart emails? I've looked through the settings but can't find where it's enabled. Also, unrelated, but I noticed I was charged twice on my last invoice, so could someone look at that too?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 236
+ },
+ {
+  "text": "Hello, I recently got a new email address and would like to change the one on my profile. My old address is going to be shut down next month. Please tell me how to update it.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 237
+ },
+ {
+  "text": "Hey, I think someone else got into my account. I saw a login from a country I've never visited, and my password no longer works. I need to lock everything down and enable two-factor authentication right now. Also, once that's sorted, could you tell me why my last invoice was charged twice? I see two $9.99 entries on my card statement.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 238
+ },
+ {
+  "text": "pls delete my acount",
+  "difficulty": "short",
+  "category": "account",
+  "id": 239
+ },
+ {
+  "text": "Hey, I got a charge from you guys for $9.99 and honestly I don't remember signing up for anything paid. Can someone look into what this is and reverse it if it's a mistake? Also, unrelated, but the app keeps crashing whenever I open the sleep tracking screen.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 240
+ },
+ {
+  "text": "Hi there, something's wrong with my profile. My name is spelled wrong and I can't seem to edit it anywhere, it's greyed out. Also I noticed my last statement PDF looked blank when I downloaded it, not sure if that's related or a separate thing.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 241
+ },
+ {
+  "text": "wrong amount on my invoice this month",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 242
+ },
+ {
+  "text": "Hello, I cancelled my annual plan two days after it renewed because I never saw the renewal notice. I'd like a refund for the $119 I was charged. My account email is priya.nair@mailbox.org. Please let me know if you need anything else.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 243
+ },
+ {
+  "text": "Search bar is broken?? Nothing comes up no matter what I type",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 244
+ },
+ {
+  "text": "Hi, the app on my Samsung smart TV crashes every time I try to open any show. I get a black screen for a few seconds and then it kicks me back to the home menu. I've already reinstalled it twice and it didn't help.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 245
+ },
+ {
+  "text": "Hi, the admin panel crashes whenever I open the Orders tab. It loads for about two seconds and then the whole browser tab goes white. This started after your update last week, and I'm unable to process any orders. Please help, Priya",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 246
+ },
+ {
+  "text": "Hello, I cancelled my subscription two weeks ago but I just saw another charge on my credit card statement. Please refund this payment and confirm that my plan is fully cancelled. Thank you.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 247
+ },
+ {
+  "text": "how do i add a unsubscribe link to my footer",
+  "difficulty": "short",
+  "category": "general",
+  "id": 248
+ },
+ {
+  "text": "Hello, I'd like to know how to add a custom domain to my storefront. Is there a step-by-step guide in the help center? I've just started setting up my shop and want to get it right.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 249
+ },
+ {
+  "text": "I'm a student and saw that you offer an education discount on your Pro plan. How do I apply for it, and what documents do you need from me? Thanks, Priya.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 250
+ },
+ {
+  "text": "Hi there, I was charged $79.99 on March 3rd for an annual subscription, but I only signed up for the monthly plan at $12.99. Could you please correct this and refund the difference? My account email is jenna.morales@example.com. Thank you!",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 251
+ },
+ {
+  "text": "Something is off with the app. Stuff just doesn't seem to work right since the last update, tasks sometimes vanish from my board and then reappear after a refresh. Not sure if it's me. Anyway, I'd also love a dark mode someday!",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 252
+ },
+ {
+  "text": "do u have a dark mode yet??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 253
+ },
+ {
+  "text": "app keeps freezing on lesson 3 plz fix",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 254
+ },
+ {
+  "text": "wheres my student discount code, still paying full price",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 255
+ },
+ {
+  "text": "Hey, I can't sign in to my account since the app updated. It says my email isn't recognized, even though I've used it for years. Also, once I'm back in, can I get a refund for the hotel I cancelled last week? Thanks, Dani",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 256
+ },
+ {
+  "text": "how do i update my credit card",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 257
+ },
+ {
+  "text": "dashboard wont load just spins forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 258
+ },
+ {
+  "text": "Hi, I've been trying to figure out how the app calculates 'active minutes' versus 'exercise minutes' because the numbers on my dashboard confuse me. Is there a guide explaining the difference? Also my app crashed once yesterday when I opened the dashboard, but it's been fine since.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 259
+ },
+ {
+  "text": "Our Zapier webhook keeps timing out and the automation fails about half the time with no useful error in the logs. It's been like this for three days and our client reports are delayed. Also, I was charged twice last month, could you check that too when you get a chance?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 260
+ },
+ {
+  "text": "Hi team, every time I try to upload a file larger than 10MB to a task, the app throws a 'Upload failed: error 502' message. I've tried Chrome and Firefox with the same result. Could you please look into this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 261
+ },
+ {
+  "text": "Hi, I was charged $14.99 twice this month for my premium subscription. Could you please refund the duplicate charge? My account email is jenna.morris@example.com.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 262
+ },
+ {
+  "text": "wheres my refund?? been 10 days",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 263
+ },
+ {
+  "text": "Something is off with my account and I'm not sure what. I can sometimes get in and sometimes it kicks me out and says I don't have access. It's been like this since Monday, really frustrating.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 264
+ },
+ {
+  "text": "Hello, something is off with what I'm paying lately. The amount on my bank statement doesn't match what I thought my plan costs, and I'm not sure why it went up. Can someone explain the charges? Also the app has felt kind of slow this week.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 265
+ },
+ {
+  "text": "Just wanted to say thank you. The mileage tracker has saved me hours at tax time and it's the best tool I've used as a freelance photographer. Keep up the great work! - Dana",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 266
+ },
+ {
+  "text": "need to change my email adress pls",
+  "difficulty": "short",
+  "category": "account",
+  "id": 267
+ },
+ {
+  "text": "I was billed twice for my annual subscription this week. Both charges of $119 show up on my credit card statement. Please refund the duplicate as soon as possible.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 268
+ },
+ {
+  "text": "cant login forgot pw",
+  "difficulty": "short",
+  "category": "account",
+  "id": 269
+ },
+ {
+  "text": "Hi, I can't log in to my account anymore. I've tried resetting my password three times but the reset email never arrives. Could you please help me get back in?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 270
+ },
+ {
+  "text": "love the new sleep graphs, great update",
+  "difficulty": "short",
+  "category": "general",
+  "id": 271
+ },
+ {
+  "text": "Hi, I can't log into my account anymore. I've tried resetting my password three times but the reset email never shows up in my inbox or spam folder. Can you help me get back in?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 272
+ },
+ {
+  "text": "Just wanted to say the new budgeting tool is fantastic. It has made tracking my monthly spending so much easier. Please pass my thanks to the development team. Best, Elena Rodriguez",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 273
+ },
+ {
+  "text": "forgot pasword, reset email not coming!!",
+  "difficulty": "short",
+  "category": "account",
+  "id": 274
+ },
+ {
+  "text": "Hey team, my inventory sync with the warehouse system via your REST API keeps failing with a 'rate limit exceeded' error even though we're only sending about 20 requests a minute. It started right after your last update. Also, unrelated, but I was charged twice for my subscription this month and would like one of those charges refunded.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 275
+ },
+ {
+  "text": "Hi, my name is Priya Nair and I run a small sustainable packaging company. We'd love to explore a partnership with your platform, perhaps featuring our eco-friendly shipping materials as a recommended supplier. Who should I contact about this?",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 276
+ },
+ {
+  "text": "Hi team, I was wondering if you have any plans to add a feature for offline folders on the mobile app? It would really help when I travel. By the way, my login failed twice this morning, but it worked on the third try, so I'm guessing it was a fluke.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 277
+ },
+ {
+  "text": "how do i change my email??",
+  "difficulty": "short",
+  "category": "account",
+  "id": 278
+ },
+ {
+  "text": "whats ur holiday hours?",
+  "difficulty": "short",
+  "category": "general",
+  "id": 279
+ },
+ {
+  "text": "I want to switch my billing from my old Visa to a new Mastercard because the Visa expires next month. How do I update the card on file without interrupting my subscription? Thank you.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 280
+ },
+ {
+  "text": "I cancelled my Premium plan two weeks ago but was still billed $79 today. Please reverse this charge and confirm that my subscription is fully cancelled. Thanks, Marcus Delgado",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 281
+ },
+ {
+  "text": "does the student discount still exist? cant find it on pricing page",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 282
+ },
+ {
+  "text": "Good morning. I'm currently on the monthly Standard plan and I'd like to switch to annual billing to get the discount you advertise. Will I be credited for the unused days of this month, or will I be charged the full annual price right away?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 283
+ },
+ {
+  "text": "Hi there, I'm planning a trip to Portugal next spring and was wondering what hours your phone support team is available. I'd like to call someone to talk through a multi-city itinerary. Thanks in advance!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 284
+ },
+ {
+  "text": "Hi, what are your support hours on weekends? I'm a freelance photographer and I usually do my bookkeeping on Sundays, so I'd like to know if someone is around in case I get stuck. Thanks, Marta",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 285
+ },
+ {
+  "text": "I want to permanently delete my account and all my personal data. I no longer use the app and would like confirmation once it's done. Please let me know what steps I need to take.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 286
+ },
+ {
+  "text": "Hi, I've been meaning to give some feedback. I think the app is great overall, but the home screen feels a bit cluttered and I'd love a way to hide widgets I don't use. Oh, and my login has been kicking me out every few days, which is kind of annoying. Cheers, Tom",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 287
+ },
+ {
+  "text": "Hello, I need to change the email address on my account from my old work email to my personal one. Where can I do that? I left the company last week and will lose access to the old inbox.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 288
+ },
+ {
+  "text": "Hello, the Slack integration stopped posting notifications to our #projects channel as of this morning. I reconnected the workspace twice and still nothing comes through. Our team relies on those alerts, so a fix would be great.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 289
+ },
+ {
+  "text": "Hi, I just wanted to say thank you to the whole team. I've lost 18 pounds since January using your app and the daily streak reminders keep me motivated. Keep up the great work!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 290
+ },
+ {
+  "text": "Hi, I was wondering about a few things with how the platform works in general, like whether there's a way to set up multiple staff accounts and what the different permission levels mean. I'm still getting a feel for everything. By the way, one of my product pages sometimes shows a 404 error when I click preview.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 291
+ },
+ {
+  "text": "whats ur support hours",
+  "difficulty": "short",
+  "category": "general",
+  "id": 292
+ },
+ {
+  "text": "Hello, I need a copy of the invoice for my last three monthly payments for my company's bookkeeping. Our billing address should read Harbor & Pine Consulting LLC, 482 Wharton Street, Portland. Please send them as PDFs when you can.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 293
+ },
+ {
+  "text": "I'd like to switch from the monthly plan to the yearly one to get the discount you advertised. How do I do that, and will I be credited for the days left on my current month? Thanks, Priya",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 294
+ },
+ {
+  "text": "do u have a student discount or nah",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 295
+ },
+ {
+  "text": "Hello, I recently got a new email address and would like to update the one on my profile. My old address is going to be deactivated at the end of the month. Please let me know how I can change it.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 296
+ },
+ {
+  "text": "Something is wrong with my store. Pages load weirdly and sometimes things just don't work the way they used to, especially since the weekend. Not sure what changed but it's affecting my customers. Can someone take a look?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 297
+ },
+ {
+  "text": "Hi there, I can't log in to my account anymore. It keeps saying my password is incorrect even though I'm sure I'm typing it right. I've tried the reset link twice but no email ever shows up. Could you help me get back in?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 298
+ },
+ {
+  "text": "app wont load my store anymore, white screen",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 299
+ },
+ {
+  "text": "does the app have offline mode? going on a plane",
+  "difficulty": "short",
+  "category": "general",
+  "id": 300
+ },
+ {
+  "text": "Hello, I was wondering if there's a way to see what features come with the Pro plan versus Standard, because the pricing page is a bit confusing to me. Also my coworker said her account got locked yesterday after a password reset and she still can't get in, so maybe someone can look at that when possible.\n\nThanks,\nSofia Rossi",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 301
+ },
+ {
+  "text": "Hi, I can't log in to my store account since this morning. It keeps saying my password is incorrect even though I'm sure I'm typing it right. Can you help me reset it?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 302
+ },
+ {
+  "text": "sync stuck at 0% since monday",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 303
+ },
+ {
+  "text": "Hi there,\n\nI'm trying to figure out how to switch my learning language from Spanish to Italian without losing my progress. Is there a way to do both courses at the same time? Thanks for your help!\n\nMaria",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 304
+ },
+ {
+  "text": "Hello, I cancelled my annual plan last week but I just saw a renewal charge of $79.99 on my credit card statement. Please refund this as I no longer want the service. Thank you.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 305
+ },
+ {
+  "text": "Good morning. Since the latest update (v4.2.1) the vocabulary flashcards take about 30 seconds to load on my Android tablet, and sometimes they just show a blank white screen. Before the update they loaded instantly. Is there a known bug?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 306
+ },
+ {
+  "text": "Hey, I think someone else logged into my account. I got a login alert from a city I've never been to. How can I secure it and kick out other sessions? I'd like to turn on two-factor authentication too.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 307
+ },
+ {
+  "text": "Someone logged into my account from another country and changed my password. I think I've been hacked. Please lock the account and help me secure it right away!",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 308
+ },
+ {
+  "text": "Hello, something is off with my profile and I can't get in the way I used to. I tried a few things but nothing works, and I'm kind of stuck. Can someone look into it? Oh and I was also charged twice on my last invoice, please check that too.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 309
+ },
+ {
+  "text": "Good afternoon. I need a copy of my invoice for March for my company's expense report. The invoice should include my full name, Carlos Ramirez, and the last four digits of the card used. Could you send it as a PDF?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 310
+ },
+ {
+  "text": "Good afternoon. My company credit card expired and I need to update the payment method on our Business account before the next renewal on the 15th. I can't find where to enter the new card details. Could you point me in the right direction?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 311
+ },
+ {
+  "text": "Hello, I run a small consulting firm and we'd love to explore a partnership or referral program with your company. Who would be the right person to speak with about this? I can share more details about our client base if useful.\n\nRegards,\nDaniel Okafor",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 312
+ },
+ {
+  "text": "Hello, the Slack integration stopped posting notifications to our channel yesterday afternoon. We haven't changed any settings on our end, and reconnecting the integration didn't help. Our whole team relies on those alerts.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 313
+ },
+ {
+  "text": "how do i add a second admin user",
+  "difficulty": "short",
+  "category": "general",
+  "id": 314
+ },
+ {
+  "text": "luv the new dashboard 👍 great work",
+  "difficulty": "short",
+  "category": "general",
+  "id": 315
+ },
+ {
+  "text": "Good afternoon. I think someone else has been accessing my account because I got a login alert from a city I've never been to. I'd like to lock the account down and enable two-factor authentication. What steps should I take right away?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 316
+ },
+ {
+  "text": "Hi, I saw a promo for 40% off the family plan in your newsletter last week but the checkout page is showing the regular price of $239. Is the offer over or am I doing something wrong? Also, I think the newsletter keeps going to my old email address, can that be updated too?",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 317
+ },
+ {
+  "text": "Our Shopify-style webhook for new orders stopped firing around 3am and none of the orders are reaching our ERP. Logs on our end show no incoming requests at all. Also, while you're at it, I noticed I was charged twice for the Pro plan this month and would like a refund for the duplicate.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 318
+ },
+ {
+  "text": "I'd like to permanently delete my account. I've moved to a different bank and don't need this one anymore. What steps do I need to take to close it out of the app?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 319
+ },
+ {
+  "text": "I want to switch from the Basic plan to Premium but I can't tell what the price difference will be. Will I be charged the full amount right away or prorated? Thanks, Tom.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 320
+ },
+ {
+  "text": "Something is off with the app since the update, stuff just doesn't work right and I get weird messages sometimes. I honestly don't know how to describe it better. Also my sister wants to know if there's a family discount.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 321
+ },
+ {
+  "text": "Hello, I noticed I was charged $15.99 on March 3rd, but my plan is supposed to be $12.99 per month. Could you please check why the price went up and adjust my bill? Thank you, Marcus Delaney",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 322
+ },
+ {
+  "text": "Hello, not sure who to ask but I was wondering if you guys have any plans to do something with group challenges or similar? Been thinking about it for a while. Anyway the login screen also looked a bit slow today but it eventually worked.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 323
+ },
+ {
+  "text": "Hi there, I'm a developer using your public API to pull my students' lesson completion data into our school dashboard. Since Monday every request to /v2/progress returns a 500 Internal Server Error. My API key hasn't changed and I haven't modified my code. Could you check whether there's an outage or a breaking change?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 324
+ },
+ {
+  "text": "Good afternoon. Could you please send me a PDF invoice for my last three payments? I need them for my company's expense report, and the receipts in the app don't show the VAT number. Thanks so much for your help.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 325
+ },
+ {
+  "text": "Hello Priya here. I was supposed to get a prorated refund after downgrading from the Advanced plan to Basic last month but nothing has shown up on my statement. Could you look into it? Separately, I'd love to know if you plan to add a dark mode to the admin panel someday.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 326
+ },
+ {
+  "text": "Hi, since yesterday's update the desktop sync client crashes every time I launch it. I get a 'Fatal error 0x80070005' message and then it closes. I'm on Windows 11 and have already reinstalled twice with no luck.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 327
+ },
+ {
+  "text": "Hi team, every time I try to export my invoices to PDF the app crashes and I get a white screen. I've tried Chrome and Firefox with the same result. Can you look into this? I have a client deadline tomorrow.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 328
+ },
+ {
+  "text": "why was i charged 29 bucks again?? didnt authorize this",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 329
+ },
+ {
+  "text": "Just wanted to say thank you to the whole team! The new expense categories feature saved me hours during tax season. I've recommended you to three other freelancers already. Keep up the great work. Priya",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 330
+ },
+ {
+  "text": "Hi, the Google Classroom integration stopped importing my class roster and now throws 'Authorization failed' every time I reconnect my account. I need this working before term starts on Monday. Separately, it would be really nice if you added a Japanese course for business learners at some point, a lot of my colleagues would sign up.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 331
+ },
+ {
+  "text": "Something is off with my account. Numbers on the tax summary page look wrong and sometimes the page just spins forever and never finishes loading. Not sure if it's a glitch or me. Also I was charged twice in March, so maybe someone can check that too.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 332
+ },
+ {
+  "text": "Hi, my card was declined when I tried to upgrade to the Pro plan, even though I used the same card for the Basic plan last month and it worked fine. Can you check what's going on with the payment on your side? Also, unrelated, it would be really nice if you added a dark mode to the dashboard at some point. Cheers, Tomasz",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 333
+ },
+ {
+  "text": "I want to permanently delete my account and all the data associated with it. Could you tell me the steps to do this? I no longer use the service. Thanks, Marcus.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 334
+ },
+ {
+  "text": "how do i turn on dark mode",
+  "difficulty": "short",
+  "category": "general",
+  "id": 335
+ },
+ {
+  "text": "app wont let me in, need password reset asap",
+  "difficulty": "short",
+  "category": "account",
+  "id": 336
+ },
+ {
+  "text": "why did my price go up to 17.99??",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 337
+ },
+ {
+  "text": "Hey, the app has been super laggy since the last update. Menus take forever to load and sometimes the whole thing just stops responding and I have to force close it. Also, while I'm writing, I noticed I was charged twice for last month, so could you check that too?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 338
+ },
+ {
+  "text": "Hi there, I just downloaded the app and I'm trying to figure out how to set a weekly step goal. Is there a place in the settings where I can change it from the default 10,000? Thanks!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 339
+ },
+ {
+  "text": "need invoice for march thx",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 340
+ },
+ {
+  "text": "Hi there, I'm trying to figure out what your customer support hours are on weekends. I'm in the Pacific time zone and usually have time to chat on Saturday mornings. Thanks in advance!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 341
+ },
+ {
+  "text": "how do i export invoices to pdf",
+  "difficulty": "short",
+  "category": "general",
+  "id": 342
+ },
+ {
+  "text": "cant login says account locked",
+  "difficulty": "short",
+  "category": "account",
+  "id": 343
+ },
+ {
+  "text": "Hey, quick question about how the sleep tracking feature works. Does it need me to wear my watch overnight, or can the phone alone detect my sleep? Also, unrelated, but I was charged twice for my premium subscription this month and I'd like that looked at. Thanks, Elena",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 344
+ },
+ {
+  "text": "Hi, the timeline view throws a blank white screen whenever I filter by assignee, and I've lost some edits because of it. Separately, while you're at it, could someone tell me how to update the credit card on file? The renewal is coming up next week.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 345
+ },
+ {
+  "text": "Hey, so I got an email saying my payment went through but I'm not sure what for? I thought my free trial was still going. Can someone look into it and tell me what I got billed for, because I also haven't been able to log in on my tablet since yesterday.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 346
+ },
+ {
+  "text": "Hi, something is off with my bill. There's a charge I don't recognize from last Tuesday and I'm not sure if it's the premium add-on or a duplicate. Honestly the whole payment situation is confusing. Anyway, I also forgot my password and the reset email never arrives, but please look at the charge first. - Dana",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 347
+ },
+ {
+  "text": "Hello, I teach English at a small language school in Lisbon and we'd love to explore a partnership with your app. Could you tell me who I should contact about educational collaborations or group programs for students?",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 348
+ },
+ {
+  "text": "something is wrong with my login again, same thing as last week, not sure what to do. the app also feels slow sometimes",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 349
+ },
+ {
+  "text": "need refund pls, signed up for wrong plan",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 350
+ },
+ {
+  "text": "Hi, I recently changed my phone number and need to update it on my profile. I can't find where to edit it in the settings. Can you tell me how to change it?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 351
+ },
+ {
+  "text": "checkout page just keeps spinning forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 352
+ },
+ {
+  "text": "Hi, I can't log in to my account anymore. I've tried resetting my password three times but the reset email never arrives. Could you help me get back in? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 353
+ },
+ {
+  "text": "bank sync broken again, wont load transactions",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 354
+ },
+ {
+  "text": "Hey, the receipt upload feature has been throwing a 'something went wrong' error every time I attach a photo, even small ones. Also, while you're at it, I was wondering whether you offer a discount for annual plans? I'm thinking of switching over from monthly billing.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 355
+ },
+ {
+  "text": "Hey team, I just noticed a $15 charge on my card, but I thought my free trial still had another week left. Can you check what happened? Also, totally unrelated, but a dark mode would be really nice to have someday.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 356
+ },
+ {
+  "text": "Hi team, every time I try to upload a file larger than 5MB to a task, the app shows 'Error 500: Internal Server Error'. I've tried Chrome and Firefox with the same result. Could you please look into this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 357
+ },
+ {
+  "text": "Hi team, the casting feature to my Chromecast stopped working after the last update and the cast icon doesn't even show up anymore. I've restarted everything on my network. Separately, I'd love it if you added more documentaries to the library, the selection is pretty thin right now.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 358
+ },
+ {
+  "text": "Something is off with the app, it's not behaving the way it used to and I don't really know how to describe it. Things just glitch out randomly, buttons don't respond and then the screen jumps back. It's been like this a while now.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 359
+ },
+ {
+  "text": "Hey, the video player freezes about 10 minutes into every episode and I have to force close the app to get it working again. Happens on both my phone and tablet. Also, unrelated, I think I was charged twice for last month, so could you check that too?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 360
+ },
+ {
+  "text": "Hey team, I was wondering whether your tool supports A/B testing for subject lines, and if so, how many variants can I test at once? Also, a side note: I think I was charged twice on my last invoice, can someone look at that when they get a chance? Mainly I just need the A/B testing info for a launch next week.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 361
+ },
+ {
+  "text": "Good afternoon. I think someone else has accessed my account because I received a login alert from a country I've never visited. I would like to secure my account and enable two-factor authentication. What should I do first?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 362
+ },
+ {
+  "text": "is there a dark mode yet??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 363
+ },
+ {
+  "text": "I would like to permanently delete my account and all my personal data. I no longer shop on your platform. Please confirm once the deletion is complete. Thanks, Marcus Lindqvist",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 364
+ },
+ {
+  "text": "Hello, I recently changed my business name and need to update the email address on my profile from the old one to carlos.mendez@mendezdesign.com. Where can I do that? I can't find the option in settings.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 365
+ },
+ {
+  "text": "Great site, love the price alerts feature. Thx!",
+  "difficulty": "short",
+  "category": "general",
+  "id": 366
+ },
+ {
+  "text": "Hi, I was charged a $12.99 monthly fee on my premium account, but I thought I downgraded to the free plan last month. Could you please look into this and refund the charge? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 367
+ },
+ {
+  "text": "Hey, one of my teammates, Priya, needs admin rights on our workspace but I don't see where to give her that permission. I'm the workspace owner. Could you point me to the right setting?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 368
+ },
+ {
+  "text": "Something looks off with my last statement from you guys. The amount isn't what I expected and I'm honestly confused. Also the app logged me out like three times today, which was annoying.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 369
+ },
+ {
+  "text": "Hello, I need a copy of my March invoice for my tax records. I can't find the PDF anywhere in my billing history. Could you email it to me? Regards, Tobias Hartmann",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 370
+ },
+ {
+  "text": "Hey, I got a charge from you guys for $14.99 and I honestly have no idea what it's for. I've been on the free plan as far as I knew, so can you tell me what's going on? Also the desktop app has been pretty slow lately but that's less urgent.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 371
+ },
+ {
+  "text": "how do i add guests to a board",
+  "difficulty": "short",
+  "category": "general",
+  "id": 372
+ },
+ {
+  "text": "why did my price go from 9 to 12 bucks",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 373
+ },
+ {
+  "text": "I want to permanently delete my account. I no longer use this bank and would like all my profile data removed. What steps do I need to take?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 374
+ },
+ {
+  "text": "Hey, so the app is super laggy lately, like every tap takes forever to respond and sometimes the whole thing just closes on me. Not sure what's going on, I haven't changed anything on my phone. Also, unrelated, but I was charged for my premium plan twice this month and would like one of those refunded.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 375
+ },
+ {
+  "text": "do you guys have a mobile app for managing orders",
+  "difficulty": "short",
+  "category": "general",
+  "id": 376
+ },
+ {
+  "text": "Hey, my coworker Dan left the company and I need to remove his access to our shared team account and make myself the admin. I don't seem to have the permission to change roles even though I'm the one who set it up. Also, while you're at it, our last invoice seemed higher than the plan we signed up for, so could someone look at that too?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 377
+ },
+ {
+  "text": "I think someone hacked my account. I received a login alert from a country I've never visited, and now my password doesn't work. Please lock the account and help me secure it as soon as possible.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 378
+ },
+ {
+  "text": "Hey, I downgraded from Pro to Basic last week but was still billed $19.99 today. Can you correct this and refund the difference? Also, unrelated, but the Android app keeps crashing whenever I try to upload photos, so please pass that on to whoever handles it.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 379
+ },
+ {
+  "text": "cant login keeps saying invalid token even after reset",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 380
+ },
+ {
+  "text": "Something is off with the app since this morning. Pages sometimes load, sometimes hang, and a couple of my boards looked half empty for a bit before coming back. Not sure if it's on my end or yours. Also it would be nice to have a dark mode someday.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 381
+ },
+ {
+  "text": "does the app work with euros and dollars both",
+  "difficulty": "short",
+  "category": "general",
+  "id": 382
+ },
+ {
+  "text": "any plans for dark mode?? would love it",
+  "difficulty": "short",
+  "category": "general",
+  "id": 383
+ },
+ {
+  "text": "Hi, I was charged $29 twice this month for my Pro plan. Could you please refund the duplicate charge? My account email is maria.lopez@studiolopez.com. Thanks, Maria",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 384
+ },
+ {
+  "text": "login loop on android, keeps sending me back to sign in",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 385
+ },
+ {
+  "text": "My husband and I share a login for booking trips, but I want to set up my own profile with separate access and permissions so he can't see my saved payment details. Is that possible? Also, are there any discounts for travelling in the off-season?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 386
+ },
+ {
+  "text": "Hey, quick question about the heart rate zones feature, how does the app decide what my max heart rate is? I'd like to understand it before trusting the zone training. Also my friend said the app crashed on her phone yesterday, not sure if that's a known thing.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 387
+ },
+ {
+  "text": "Dashboard takes forever to load lately, like 40+ seconds. Our workspace has about 300 active projects and it never used to be this slow. Also, while you're at it, could someone tell me how to update the billing contact? Thanks, Marcus",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 388
+ },
+ {
+  "text": "Hi, the receipt upload button does nothing when I click it, no error, no spinner, nothing. It's been like this for days and I can't log any of my expenses. Also, while you're at it, could you tell me whether the Pro plan includes multi-currency invoicing? I might upgrade later this month.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 389
+ },
+ {
+  "text": "wheres my invoice for june",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 390
+ },
+ {
+  "text": "Hi, could you point me to where I can generate a quarterly tax estimate report? I looked under Reports but only see the annual summary. Also, I think I might have been charged twice in March, but I'll check my bank statement and get back to you on that. Thanks, Leila",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 391
+ },
+ {
+  "text": "Hello, could you tell me how to add a custom domain to my store? I've already bought the domain from another registrar and just need to know where to enter it in the settings. Any step-by-step guide would be appreciated.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 392
+ },
+ {
+  "text": "Reset link never arrives, still locked out of my login",
+  "difficulty": "short",
+  "category": "account",
+  "id": 393
+ },
+ {
+  "text": "My credit card expired and I want to update it before my next renewal. I can't find where to enter the new card number in the settings. Can you point me to the right page? Thank you, Priya.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 394
+ },
+ {
+  "text": "Hi there, I run a small newsletter for freelance designers (about 8k subscribers) and would love to explore a partnership or affiliate arrangement with you. Who is the right person to contact? Best, Tom Berglund",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 395
+ },
+ {
+  "text": "Just wanted to say thank you. Your desktop app has made syncing my photos across devices so much easier. The team did a great job, and I'll be recommending it to my coworkers.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 396
+ },
+ {
+  "text": "Our Slack integration stopped posting task updates to our channel since yesterday morning. I re-authorized the connection but nothing changed. We rely on those notifications daily, so any help would be appreciated. - Marcus, Delta Logistics",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 397
+ },
+ {
+  "text": "app wont load on my ipad just spins",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 398
+ },
+ {
+  "text": "Hi, I was wondering about something with my store but I'm not totally sure how to explain it. Is there a guide somewhere that explains how all the different sections of the dashboard fit together? I feel like I'm missing something basic and a bit lost overall.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 399
+ },
+ {
+  "text": "can u add a pilates workout type pls",
+  "difficulty": "short",
+  "category": "general",
+  "id": 400
+ },
+ {
+  "text": "Hi, I run a small financial literacy podcast and would love to discuss a possible partnership or sponsorship with your bank. Who should I contact about this? Regards, Tobias Lindqvist",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 401
+ },
+ {
+  "text": "search bar so slow its unusable, like 30 sec per query",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 402
+ },
+ {
+  "text": "forgot password reset not working",
+  "difficulty": "short",
+  "category": "account",
+  "id": 403
+ },
+ {
+  "text": "Good afternoon. My husband and I share a joint account, but I only have view access in the app and can't make any changes to the settings. Could you please give me full permissions as a co-owner? Thank you, Margaret Oyelaran.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 404
+ },
+ {
+  "text": "need invoice for last months payment pls",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 405
+ },
+ {
+  "text": "its not working properly again, same thing as last week, can someone look at it? thanks",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 406
+ },
+ {
+  "text": "Hi, something is off with my account and the amount I'm paying each month. It seems higher than what I signed up for a while ago, and I'd like someone to explain it. Thanks, Marcus",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 407
+ },
+ {
+  "text": "Hello, I recently got a new work email address and need to change the email on my profile. My old company address will be deactivated next week. How do I update it without losing my projects?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 408
+ },
+ {
+  "text": "Hello, I've been locked out of my banking app after entering the wrong password too many times. I tried the 'Forgot Password' link but the reset email never arrived. Could you please help me regain access to my account?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 409
+ },
+ {
+  "text": "Hi there, I was charged $29 twice on June 3rd for my Pro plan. Could you please refund the duplicate charge? My account email is dana.whitfield@gmail.com. Thanks!",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 410
+ },
+ {
+  "text": "I would like to permanently delete my account and all of my personal data. Please let me know the steps or do it on your end. Thanks, Marcus Webb",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 411
+ },
+ {
+  "text": "how do i save a search for later",
+  "difficulty": "short",
+  "category": "general",
+  "id": 412
+ },
+ {
+  "text": "need to remove my ex from my team admin access asap",
+  "difficulty": "short",
+  "category": "account",
+  "id": 413
+ },
+ {
+  "text": "cant login keeps spinning forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 414
+ },
+ {
+  "text": "Hey, I'm a teacher trying to connect your API to our school's Google Classroom, and the OAuth token request keeps returning a 401 even though my credentials are correct. I've double-checked the client ID like ten times. Also, while I'm writing, I was charged twice for my school's annual plan this month and would like one of those charges refunded.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 415
+ },
+ {
+  "text": "Good afternoon. I run a small chain of yoga studios and we would love to explore a partnership with your app, perhaps offering our members a discounted premium subscription. Who would be the best person to speak with about this?",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 416
+ },
+ {
+  "text": "how do i export my contact list to csv??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 417
+ },
+ {
+  "text": "how do i change my username",
+  "difficulty": "short",
+  "category": "account",
+  "id": 418
+ },
+ {
+  "text": "Good afternoon. I need a PDF invoice for my last three monthly payments for my company's expense reports. I can't find where to download them in my account settings. Could you send them over? Regards, Margaret Olsen",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 419
+ },
+ {
+  "text": "Good afternoon. My husband and I share a household and I'd like to give him view-only access to my account without sharing my password. Is there a way to set up limited permissions for him? Regards, Priya Nair",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 420
+ },
+ {
+  "text": "Hi, every time I try to upload a product image larger than 2MB, the dashboard throws a 500 Internal Server Error. I've tried Chrome and Firefox with the same result. Could you look into this? Thanks, Marcus",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 421
+ },
+ {
+  "text": "Hello, I recently changed jobs and need to update the email address on my account from my old work address to my personal Gmail. How can I do that? My name is Priya Raman.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 422
+ },
+ {
+  "text": "cant login forgot my password",
+  "difficulty": "short",
+  "category": "account",
+  "id": 423
+ },
+ {
+  "text": "how do i change my store theme pls",
+  "difficulty": "short",
+  "category": "general",
+  "id": 424
+ },
+ {
+  "text": "app keeps freezing when i open reports",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 425
+ },
+ {
+  "text": "Good afternoon. I'm a developer using your partner API to pull the catalog metadata into our app. Since this morning every request to the /titles endpoint returns a 500 Internal Server Error. Our API key hasn't changed. Can someone check on this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 426
+ },
+ {
+  "text": "Hello, I noticed two identical charges for this month's subscription on my credit card statement. Please look into this and refund the duplicate payment as soon as possible. I'd appreciate a confirmation email once it's processed.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 427
+ },
+ {
+  "text": "Hey, the Google Calendar sync is duplicating every due date as two separate events. It started after I reconnected my account on Monday. I've tried disconnecting and reconnecting again but it keeps happening.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 428
+ },
+ {
+  "text": "do u offer a student discount",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 429
+ },
+ {
+  "text": "Hey, I got billed $29.99 for the Premium plan after my free trial ended, and I never got a reminder that the trial was ending. I'd like a refund please. Also, unrelated, but the app keeps logging me out every time I switch to another app, which is pretty annoying.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 430
+ },
+ {
+  "text": "Hi, something is off with the sync between your calendar and Google Calendar. Some of my deadlines show up twice and others are missing altogether. Not sure when it started, maybe last week? Anyway, I also noticed my invoice from March was sent to my old email address, so could you resend it?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 431
+ },
+ {
+  "text": "app keeps crashing when i open orders tab",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 432
+ },
+ {
+  "text": "Hello, I keep getting 'Error 502: Bad Gateway' when I try to sync my progress between my phone and laptop. It has been happening since yesterday morning. Could you please look into it?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 433
+ },
+ {
+  "text": "need to update my credit card thx",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 434
+ },
+ {
+  "text": "Hello, could you send me a PDF copy of my invoice for January? I need it for my company's expense report. Thank you, Marcus Oyelaran.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 435
+ },
+ {
+  "text": "Good afternoon. I just noticed I'm being billed twice per month, once for my personal 2TB plan and once for a second subscription I never signed up for. Please cancel the duplicate and refund the extra charges from the last two months. Regards, Tobias Okafor",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 436
+ },
+ {
+  "text": "Hi there, I was charged $119.88 on March 3rd for my annual Plus plan, but I switched to the monthly plan back in February. Could you please refund the difference? My account email is jordan.mills@example.com.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 437
+ },
+ {
+  "text": "Good morning. I'm interested in how to set up recurring savings goals within the app, as I've seen a few friends using that feature. By the way, I also got locked out last week after entering my password wrong a few times, but I got back in so no worries now. Cheers, Kwame Mensah",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 438
+ },
+ {
+  "text": "Hello, I keep getting error code 4012 whenever I try to play videos on my laptop in Chrome. It started yesterday after the latest browser update. Could you please help me fix this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 439
+ },
+ {
+  "text": "The mobile app freezes on the loading screen. Android 14, Pixel 7. I've cleared the cache and it still hangs forever, so I can't open any of my files.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 440
+ },
+ {
+  "text": "love the new streak feature!! thx",
+  "difficulty": "short",
+  "category": "general",
+  "id": 441
+ },
+ {
+  "text": "love the new dashboard, great job team",
+  "difficulty": "short",
+  "category": "general",
+  "id": 442
+ },
+ {
+  "text": "Hi there, something looks off on my last statement and I can't tell what the $24.99 line is for. I don't remember buying anything extra. Can someone take a look and let me know what it is?",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 443
+ },
+ {
+  "text": "I'd like to permanently delete my account and all the personal data attached to it. I've stopped freelancing and no longer need the tool. Please let me know what steps I need to take.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 444
+ },
+ {
+  "text": "how do i change my credit card",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 445
+ },
+ {
+  "text": "Hello, something is off with my account and the amount I'm being billed each month doesn't seem right compared to what I remember agreeing to. I don't really know which plan I'm on anymore. Can someone look into it and explain what I'm paying for?",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 446
+ },
+ {
+  "text": "refund pls, charged after trial ended",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 447
+ },
+ {
+  "text": "Dear Support, I upgraded to the Family plan last week and was billed the full amount even though your pricing page advertised a 20% launch discount. Please apply the discount and refund the difference. Separately, I've also noticed that shared folders sometimes take a long time to sync on my phone, though that's not why I'm writing.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 448
+ },
+ {
+  "text": "Hi team, I think someone else may have gotten into my account because I received a login alert from a city I've never been to. I need to change my password and turn on two-factor authentication right away. Also, while you're at it, I noticed my last statement showed a monthly fee of $12 that I don't remember agreeing to, so can someone explain that too?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 449
+ },
+ {
+  "text": "Hey, so I got a new phone and now the app keeps asking me to verify my identity and I can't get past it, it just loops back to the login screen. Honestly I'm not even sure what I'm supposed to do at this point. Oh and the transfer I made yesterday still shows as pending.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 450
+ },
+ {
+  "text": "love the new update thx",
+  "difficulty": "short",
+  "category": "general",
+  "id": 451
+ },
+ {
+  "text": "Hello, I recently got married and need to change the name on my profile and the email address tied to my account. My old work email is being shut down next week. Please let me know how to update both. Thanks, Priya",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 452
+ },
+ {
+  "text": "Something is off with the app lately. Things don't save properly and sometimes I have to redo my edits, and it happens at random. I'm not sure if it's my browser or what, but it's driving me nuts. By the way, can you add a dark mode at some point?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 453
+ },
+ {
+  "text": "Hi, the pronunciation checker gives me a 'Something went wrong' popup every time I record an answer, on both wifi and mobile data. I'm on a Pixel 7 running Android 14. It's making my daily practice impossible. Also I think the Spanish course could use more advanced grammar content, but that's less urgent.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 454
+ },
+ {
+  "text": "whats ur live chat hours??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 455
+ },
+ {
+  "text": "need refund for double charge pls",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 456
+ },
+ {
+  "text": "cancel my subscription and refund me im not using it",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 457
+ },
+ {
+  "text": "Hey, I can't get into my account since yesterday, it keeps sending me back to the login screen. Also, unrelated, but the Spanish lesson audio on unit 4 has been cutting out a lot lately. Would be great if someone could look into both.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 458
+ },
+ {
+  "text": "Hello, I just wanted to say thank you to your team. I launched my first store last week and the onboarding guides made everything so simple. The theme customization tools are fantastic. Keep up the great work!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 459
+ },
+ {
+  "text": "Hi, something is off with the dashboard. Numbers load weirdly, sometimes they flicker, then disappear, and I don't really know how to describe it better. It's been happening on and off since I got back from vacation. By the way, could you also tell me how to update the company name that shows on my invoices?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 460
+ },
+ {
+  "text": "Hi team, I'm a developer and your public API is returning a 500 Internal Server Error when I call the /v2/watchlist endpoint with a valid token. It was working fine last week. Could someone from engineering take a look?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 461
+ },
+ {
+  "text": "Our API calls to /v2/tasks have started returning 429 errors even though we're sending fewer than 50 requests per minute, well under the documented limit. This began after Tuesday's release and is breaking our nightly sync script. Please advise on what's changed.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 462
+ },
+ {
+  "text": "Hello, my access seems off since yesterday. I can get to the home screen but a bunch of things I used to be able to do are missing or blocked and it asks me to verify who I am again and again. Not sure what changed on my end, please advise. - Tomás",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 463
+ },
+ {
+  "text": "Hey team, my new colleague Dana can't accept her workspace invite because it says her account has no permission to join our org. Please fix her access. Unrelated, but it would also be great if you added a dark mode to the mobile app someday!",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 464
+ },
+ {
+  "text": "Hello, what are your customer support hours? I'd like to call someone on the weekend if possible. Please let me know when the phone line is open.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 465
+ },
+ {
+  "text": "I need to update the credit card on my account because my old one expired last month. I can't find where to change the payment method in the settings. Can you point me to it or update it for me? Regards, Priya Raman",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 466
+ },
+ {
+  "text": "Our Shopify integration stopped syncing new customers to our lists since Monday. The connection page says 'authentication failed' even after I reconnected it three times. Please help, we're losing leads.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 467
+ },
+ {
+  "text": "Something is off with my profile. I'm not sure if it's the permissions or my login, but I can't get to my shared folders the way I used to be able to as the account owner. Maybe it's also related to why the app has been so slow lately?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 468
+ },
+ {
+  "text": "Hey, quick question: can I track swimming laps with the app, or is it only for running and cycling? I swim three times a week and want to log it. Also, side note, I think I was charged twice for my premium subscription this month, can someone look at that too?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 469
+ },
+ {
+  "text": "Good afternoon. I entered the discount code SPRING20 at checkout but the 20% was not applied to my order total. I paid full price of $120 and would like the difference credited back to my card.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 470
+ },
+ {
+  "text": "Hi there. My invoice for February shows two identical charges of $14.99. Can someone look into this and refund the duplicate? I've attached a screenshot of my bank statement.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 471
+ },
+ {
+  "text": "cant login, page just spins forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 472
+ },
+ {
+  "text": "Hi team, my freelance income has dropped a lot this quarter and I'd like to downgrade to a cheaper plan, or at least know what my options are for lower pricing. Unrelated, but it would be amazing if you added a direct bank feed for my credit union someday. Thanks, Marcus",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 473
+ },
+ {
+  "text": "whats the price for family plan??",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 474
+ },
+ {
+  "text": "Hello,\n\nWhat are your customer support hours? I'd like to know if someone is available on weekends because my team usually works on Saturdays. Thank you.\n\nRegards,\nPriya Nair",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 475
+ },
+ {
+  "text": "why was i charged twice this month",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 476
+ },
+ {
+  "text": "Just wanted to say thanks, the new timeline view has made our sprint planning so much easier. Great work to the whole team! Our designers especially love it.\n\nCheers,\nPriya",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 477
+ },
+ {
+  "text": "why was i charged again after i cancelled",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 478
+ },
+ {
+  "text": "Good afternoon. I'd like to add my wife as an authorized user on my account so she can view balances. What permissions can I give her, and how do I set this up?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 479
+ },
+ {
+  "text": "love the new update, great job team",
+  "difficulty": "short",
+  "category": "general",
+  "id": 480
+ },
+ {
+  "text": "Hello,\n\nWhat are your customer support hours? I'm based in Sydney and want to know when someone would be available to chat. Thank you!\n\nDavid Chen",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 481
+ },
+ {
+  "text": "Hello, my automation workflow stopped sending emails two days ago even though it still shows as active. No error messages appear anywhere in the dashboard. This is affecting our welcome series for new subscribers.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 482
+ },
+ {
+  "text": "Something is wrong with my profile again, I tried to get in this morning and it just won't let me do anything. Same thing happened last month. Please fix it, I'm tired of this.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 483
+ },
+ {
+  "text": "Hello, I cancelled my Premium subscription two weeks ago but I just saw another charge on my credit card. Please refund this payment and confirm that my subscription is fully cancelled. I'd appreciate a reply as soon as possible.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 484
+ },
+ {
+  "text": "cant sync calendar, just spins forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 485
+ },
+ {
+  "text": "Hi there,\n\nI'm new to your platform and wondering how I can schedule a campaign to go out at a specific time in a different time zone. Is that something I can do from the campaign editor? Thanks in advance!\n\nBest,\nMarcus",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 486
+ },
+ {
+  "text": "Hey, I'm trying to switch my profile name and update my email, but the settings page just keeps saying 'error' whenever I hit save. Also, while you're at it, the Spanish lesson audio on the verbs unit has been cutting out for me lately, so maybe that needs a look too.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 487
+ },
+ {
+  "text": "Hey, I think someone else has been trying to get into my account. I got three password reset emails today that I never requested, and I'm worried. Can you help me lock things down and enable stronger security on my login? Also, unrelated, but I noticed the app's transfer screen is a bit slow lately.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 488
+ },
+ {
+  "text": "Good morning. I need a PDF copy of my invoice for January for my own tax records, but the download button in the billing section only gives me a blank page. Can you send it to me by email? Best regards, Eleanor Whitfield",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 489
+ },
+ {
+  "text": "Hi team, I upgraded to the 2TB plan yesterday and was charged $9.99 more than the price listed on your pricing page. I'd like the difference refunded. Also, unrelated, the desktop app has been crashing on startup since the last update, so if someone could look at that too, great.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 490
+ },
+ {
+  "text": "Hello, I can't log in to my banking app anymore. It keeps saying my password is incorrect even though I'm certain I'm typing it right. Could you please help me reset it?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 491
+ },
+ {
+  "text": "Hi there, something looks off with my last bill. It's higher than what I was quoted when I signed up and I don't really understand the extra line items. Can someone explain? Oh and by the way, the dashboard has been loading really slowly lately.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 492
+ },
+ {
+  "text": "pls delete my acount thx",
+  "difficulty": "short",
+  "category": "account",
+  "id": 493
+ },
+ {
+  "text": "cant login forgot password",
+  "difficulty": "short",
+  "category": "account",
+  "id": 494
+ },
+ {
+  "text": "Hey, my student discount didn't apply to this month's bill and I got charged the full $14.99. Can you correct that and refund the difference? Also, the app keeps freezing on my Roku whenever I open the Continue Watching row, but the billing thing is what I need sorted first.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 495
+ },
+ {
+  "text": "hey whats the best way to tag expenses by client??",
+  "difficulty": "short",
+  "category": "general",
+  "id": 496
+ },
+ {
+  "text": "Hello, our inventory sync through your REST API has been returning 429 and sometimes 503 errors since yesterday morning. We haven't changed our request volume at all. Our integration with the warehouse system is basically dead right now, so please advise on what's going on.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 497
+ },
+ {
+  "text": "Something looks off with my last statement. There's a charge from you that I don't recognize and I'm not sure it matches what I signed up for. Can someone check what's going on with my account?",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 498
+ },
+ {
+  "text": "delete my acount pls",
+  "difficulty": "short",
+  "category": "account",
+  "id": 499
+ },
+ {
+  "text": "why was i charged again??",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 500
+ },
+ {
+  "text": "Hi team, every time I try to import my contact list from a CSV file, the page freezes and then shows 'Error 500: Internal Server Error'. I've tried Chrome and Firefox with the same result. Can you please look into this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 501
+ },
+ {
+  "text": "Does the app support tracking swimming workouts? I do laps at the pool three times a week and want to know if I can log them with my watch. Thanks, Derek",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 502
+ },
+ {
+  "text": "Hi, I was charged $15.99 on March 3rd but I downgraded to the basic plan at the end of February. Could you please refund the difference? My account email is jtanaka@example.com. Thanks, Jun",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 503
+ },
+ {
+  "text": "Good afternoon. Our webhook for task.completed events has not fired since Tuesday, and the delivery log in the developer settings shows every attempt as 'failed' with a timeout. Our endpoint is up and responding in under 200ms on our side. Could someone from engineering investigate?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 504
+ },
+ {
+  "text": "pls delete my profile asap",
+  "difficulty": "short",
+  "category": "account",
+  "id": 505
+ },
+ {
+  "text": "Hi team, every time I try to upload a file larger than 10MB to a task, the app throws a 'Upload failed: error 500' message. I've tried Chrome and Firefox with the same result. Could you please look into this?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 506
+ },
+ {
+  "text": "cant login pw reset email never comes",
+  "difficulty": "short",
+  "category": "account",
+  "id": 507
+ },
+ {
+  "text": "Just wanted to say thank you to your team. I booked a family trip to Costa Rica through your site last month and the whole process was smooth and easy. We will definitely be using you again for our next vacation.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 508
+ },
+ {
+  "text": "cant update my card for the subscription payment, how do i change it",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 509
+ },
+ {
+  "text": "subtitles are out of sync again ugh",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 510
+ },
+ {
+  "text": "What are your support hours on weekends?",
+  "difficulty": "short",
+  "category": "general",
+  "id": 511
+ },
+ {
+  "text": "Something's wrong with my profile, I can't access stuff I used to be able to. Not sure what happened, been like this since Tuesday. Might be related to the card I ordered too?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 512
+ },
+ {
+  "text": "account locked out again, help!!",
+  "difficulty": "short",
+  "category": "account",
+  "id": 513
+ },
+ {
+  "text": "Hi, I was wondering about something with the app, not sure if it's possible or if I'm just missing it. Basically I want to do more with the lessons than I currently am. Can someone point me in the right direction?",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 514
+ },
+ {
+  "text": "app keeps crashing when i open the gantt view",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 515
+ },
+ {
+  "text": "api returns 403 even w valid token??",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 516
+ },
+ {
+  "text": "Good afternoon. My credit card expired and I need to update the payment method on my account before the next renewal. I can't find where to enter the new card details in the billing settings. Can you point me in the right direction?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 517
+ },
+ {
+  "text": "Hey, I got charged for the premium plan even though I cancelled my free trial before it ended, so I'd like that money back. Also, while you're at it, the subtitles on the Spanish dubbed shows keep going out of sync, which is really annoying.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 518
+ },
+ {
+  "text": "card got declined but i paid already",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 519
+ },
+ {
+  "text": "is there an app for android or just web",
+  "difficulty": "short",
+  "category": "general",
+  "id": 520
+ },
+ {
+  "text": "Hey, I think someone else tried to get into my account because I got three password reset emails I never requested. I want to turn on two-factor authentication and lock things down ASAP. Also, while you're at it, the app's transfer screen has been really slow lately.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 521
+ },
+ {
+  "text": "Someone logged into my account from another country. I changed my password but I'm worried. How do I turn on two-factor authentication and log out all other devices? This is urgent.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 522
+ },
+ {
+  "text": "I signed up using the student discount code, but I'm being charged full price and the 50% off never showed up. Please apply the discount and refund what I overpaid. Once that's sorted, could you also tell me how to set up two-factor authentication? Thanks, Dev",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 523
+ },
+ {
+  "text": "API returns 429 even tho I barely make any calls??",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 524
+ },
+ {
+  "text": "Just wanted to say thank you. The new drag-and-drop template editor is fantastic and has saved our small team hours every week. Keep up the great work!\n\nCheers,\nPriya Nair",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 525
+ },
+ {
+  "text": "Hi, I run a podcast network with about 40k listeners and we'd love to explore a partnership or affiliate arrangement with your company. Who is the right person to speak to about that? Looking forward to hearing from you.\n\nSincerely,\nTobias Lindqvist",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 526
+ },
+ {
+  "text": "Videos buffer constantly even though my internet speed test shows 200 Mbps. Other apps like YouTube work perfectly fine on the same connection. This has been going on for three days now and it's really frustrating.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 527
+ },
+ {
+  "text": "Hi there. I'd like to switch from monthly to annual billing to get the discount you advertise on your pricing page. Will my current month be prorated, or will I be charged the full annual amount right away? Thanks! Priya",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 528
+ },
+ {
+  "text": "Hi, I'd like to switch from the monthly plan to the yearly one. Will I be charged the full price right away, or will the remaining days of this month be credited? I want to make sure I understand the cost before I confirm.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 529
+ },
+ {
+  "text": "Hey, I've been locked out of my account since yesterday after entering the wrong password too many times. Can you unlock it for me? Also, while you're at it, my step count has seemed a bit off lately compared to my watch, so if someone could look at that too it'd be great.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 530
+ },
+ {
+  "text": "app keeps freezing on the flashcards screen",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 531
+ },
+ {
+  "text": "Hey, my Slack integration stopped posting notifications when files get shared in our team folder. It was working fine last week and I haven't touched the settings. Also, while you're at it, could you tell me when my next invoice is due? I couldn't find it in the billing page.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 532
+ },
+ {
+  "text": "Hi, I was charged $14.99 on March 3rd even though I downgraded to the free plan on February 25th. Could you please refund the charge and confirm my account is no longer on a paid tier? Thanks, Marcus Lindqvist",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 533
+ },
+ {
+  "text": "how do i change my email adress",
+  "difficulty": "short",
+  "category": "account",
+  "id": 534
+ },
+ {
+  "text": "Hello, my name is Priya and I run a small marketing agency. We'd love to explore a partnership where we recommend your platform to our clients in exchange for a referral commission. Could you tell me who I should speak to about setting up an affiliate or agency partner program?",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 535
+ },
+ {
+  "text": "do you have a dark mode",
+  "difficulty": "short",
+  "category": "general",
+  "id": 536
+ },
+ {
+  "text": "Hi, I've been trying to open the app since this morning's update and it crashes immediately on the splash screen. I'm on an iPhone 13 running iOS 17.2. I've already tried reinstalling it twice with no luck. Can you help?",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 537
+ },
+ {
+  "text": "Hi there, I'm trying to figure out how to share a folder with someone who doesn't have an account. Is there a way to generate a public link that expires after a few days? Thanks in advance for your help.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 538
+ },
+ {
+  "text": "Hi, my coach invited me to share my workout data with her, but I can't find where to give her permission to view my profile. I need to sort out access before our session on Friday. Separately, I was charged twice for my premium subscription this month and would like a refund for the duplicate.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 539
+ },
+ {
+  "text": "Hi, I was charged twice for my monthly Pro plan subscription on March 3rd. The amount of $49 appears two times on my credit card statement. Could you please refund the duplicate charge?",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 540
+ },
+ {
+  "text": "Good afternoon. I think someone else tried to log into my account because I got a security alert email I didn't expect. I want to change my password and turn on two-factor authentication right away. What should I do?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 541
+ },
+ {
+  "text": "Hey team, just some feedback. The analytics dashboard is great but it'd be really helpful if we could export reports to CSV and compare date ranges side by side. Not urgent at all. Oh, and the checkout page loaded really slowly for a few customers yesterday, not sure if that's on your end.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 542
+ },
+ {
+  "text": "need invoice for last month pls",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 543
+ },
+ {
+  "text": "Hi team, the Google Calendar integration that's supposed to remind me of my daily lessons stopped sending notifications about two weeks ago. I disconnected and reconnected it twice with no luck. By the way, it would be really great if you could add a Korean course for business vocabulary at some point.",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 544
+ },
+ {
+  "text": "Hey team, I just wanted to say thank you. I've lost 12 pounds since I started using your app three months ago and the streak reminders keep me going. Keep up the great work!",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 545
+ },
+ {
+  "text": "Hi, not sure who to ask about this but I've been thinking about how your tool could work better for nonprofits like ours. We'd love to give feedback on a few things, like adding donation buttons and simpler list imports. Oh, and last week the login page was really slow for me, but it seems fine now.\n\nBest,\nJamal Okafor",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 546
+ },
+ {
+  "text": "cant log in it just spins forever",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 547
+ },
+ {
+  "text": "API returns 429 even tho im under the rate limit",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 548
+ },
+ {
+  "text": "Hey, not sure who to ask about this but I've been wondering if there's any way to get more info on how your loyalty rewards program works in general? Like do points expire or whatever. Oh and my password reset email never came through either, if that matters.",
+  "difficulty": "hard",
+  "category": "general",
+  "id": 549
+ },
+ {
+  "text": "how do i bulk upload products csv",
+  "difficulty": "short",
+  "category": "general",
+  "id": 550
+ },
+ {
+  "text": "Good afternoon. I would like to request an invoice for my business account subscription for the last quarter. My accountant needs it for our tax filing. Please send it to this email address in PDF format.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 551
+ },
+ {
+  "text": "Hello, I need a PDF copy of my March invoice for my tax records, but I can't find it anywhere in my billing history. Could you send it to me? I'd appreciate it before my accountant's deadline on Friday.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 552
+ },
+ {
+  "text": "charged twice this month?? pls refund",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 553
+ },
+ {
+  "text": "Hey, the mobile app on my Android freezes whenever I try to add a comment to a task. It's been happening since the last update, and I have to force close it every time. Running Android 14 on a Pixel 7 if that helps.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 554
+ },
+ {
+  "text": "Hey, I got charged $29.99 today even though I downgraded to the free plan two weeks ago. I want that money back. Also, while I'm writing, the desktop sync app has been crashing on startup since the last update, so if someone could look at that too, that'd be great.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 555
+ },
+ {
+  "text": "Hello, I would like to get a copy of the invoice for my last three payments. My accountant needs them for our quarterly tax filing. Please send them as PDFs to this email address.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 556
+ },
+ {
+  "text": "Hi, I think someone else got into my account. I saw a login from a country I've never been to, and my profile photo changed. I need to lock it down and enable two-factor authentication right now. Also, once that's sorted, could you tell me if the Pro plan invoice will still be charged this month?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 557
+ },
+ {
+  "text": "need refund pls charged twice this month",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 558
+ },
+ {
+  "text": "Hi there. I got a notification that my account was suspended and now I can't sign in at all, which is really frustrating. I have a ton of stuff in there I need for a presentation tomorrow. Also the desktop sync app has been crashing a lot lately, not sure if that's related.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 559
+ },
+ {
+  "text": "Good afternoon. I want to permanently delete my account and all my personal data. Please confirm what steps I need to take and how long the deletion will take.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 560
+ },
+ {
+  "text": "Hi, I noticed I was charged $14.99 on March 3rd, but I thought I had cancelled my Plus plan last month. Could you please look into this and refund the charge? My account email is dana.whitfield@example.com.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 561
+ },
+ {
+  "text": "I want to permanently delete my account and all my personal data from your site. I've decided I won't be using the service anymore. Please confirm once it has been completed. Regards, Priya Nair",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 562
+ },
+ {
+  "text": "Hi, the Shopify-style CSV export button in the reports section does nothing when I click it, and the console shows a JavaScript TypeError. Been like this for a week. By the way, my account email is wrong on invoices, can that be updated too?",
+  "difficulty": "hard",
+  "category": "technical",
+  "id": 563
+ },
+ {
+  "text": "cant upload images, editor crashes everytime",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 564
+ },
+ {
+  "text": "need refund for last month pls",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 565
+ },
+ {
+  "text": "Something is off with my account, I don't really know how to explain it. I can see my name but the details look different than before and I'm not sure it's still mine. Also the app has been a bit slow lately.",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 566
+ },
+ {
+  "text": "Hi, I can't log in to my account anymore. I keep getting an 'incorrect password' error even though I'm sure I'm typing it right. I tried the reset link but the email never arrives. Can you help me get back in?",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 567
+ },
+ {
+  "text": "Hi there. I added my bookkeeper to my workspace last week but she only sees a blank dashboard. How do I give her the right permissions to view my invoices and expenses? Regards, Priya",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 568
+ },
+ {
+  "text": "Hello, does the app support syncing with Garmin watches? I recently bought a Forerunner 255 and would love to know if it works with your tracking. Thank you for your help.",
+  "difficulty": "easy",
+  "category": "general",
+  "id": 569
+ },
+ {
+  "text": "charged twice this month pls refund",
+  "difficulty": "short",
+  "category": "billing",
+  "id": 570
+ },
+ {
+  "text": "everything super slow today wtf",
+  "difficulty": "short",
+  "category": "technical",
+  "id": 571
+ },
+ {
+  "text": "Hello support team, the audio for the pronunciation exercises in the Spanish course won't play at all. I see the loading spinner and then an error message saying 'Playback failed (code 504)'. Other apps play sound fine on my phone, so it seems to be a problem with your app.",
+  "difficulty": "easy",
+  "category": "technical",
+  "id": 572
+ },
+ {
+  "text": "Hi, I was charged $11.99 twice on March 3rd for my Plus subscription. Both charges appear on my Visa statement. Could you please refund the duplicate payment? Thanks, Marcus Lindqvist",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 573
+ },
+ {
+  "text": "Hey, I cancelled my subscription on the 2nd but was still billed $39 on the 5th. I'd like that refunded please. Also, before I cancelled, the CSV export kept freezing on large files, so if someone could look into that too, it would be great.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 574
+ },
+ {
+  "text": "Hi there, something looks off with my last statement and I think I'm paying more than I should be for my plan. I was quoted a lower price when I signed up and now it's higher. Can someone explain? Also the dark mode toggle in settings doesn't seem to save my choice.",
+  "difficulty": "hard",
+  "category": "billing",
+  "id": 575
+ },
+ {
+  "text": "Hey, my wife and I share a joint account but she can't see it when she logs into her own profile. I need to add her as an authorized user with full access so she can view everything. Also, while you're at it, I noticed a $12 monthly fee on my last statement that I don't recognize, so could someone look into that too?",
+  "difficulty": "hard",
+  "category": "account",
+  "id": 576
+ },
+ {
+  "text": "Hi, I recently got a new email address and need to update it on my profile. The old one is no longer active, so I can't receive verification codes. Please let me know how to change it.",
+  "difficulty": "easy",
+  "category": "account",
+  "id": 577
+ },
+ {
+  "text": "Hi there. I cancelled my subscription two weeks ago but I just saw another charge on my credit card. I would like a refund for this payment please. My account email is priya.nair@example.com.",
+  "difficulty": "easy",
+  "category": "billing",
+  "id": 578
+ }
+]

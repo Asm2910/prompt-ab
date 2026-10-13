@@ -1,0 +1,63 @@
+id,input,output,human_score,note
+cal-001,can u add a pilates workout type pls,"{""category"": ""general"", ""summary"": ""Customer is requesting the addition of a pilates workout type to the application.""}",2,
+cal-002,dashboard wont load just spins forever,"```json
+{
+  ""category"": ""technical"",
+  ""summary"": ""Customer reports dashboard failing to load and continuously spinning.""
+}
+```",3,
+cal-003,"Hi there, I'm trying to figure out how to share a folder with someone who doesn't have an account. Is there a way to generate a public link that expires after a few days? Thanks in advance for your help.","The customer is asking about a feature for sharing folders with non-account holders and wants to know if they can create a public link with an expiration date. This is a question about how to use the product's features, which falls under a technical support issue.
+
+```json
+{
+  ""category"": ""technical"",
+  ""summary"": ""Customer wants to know how to generate an expiring public link to share a folder with non-account users.""
+}
+```",4,
+cal-004,"Hello, I run a community of about 8,000 freelancers and would love to discuss a partnership or affiliate arrangement with you. Who is the right person to talk to? Unrelated, but the app crashed twice yesterday when I uploaded receipts. Not urgent. Best, Jordan Reyes","{""category"": ""technical"", ""summary"": ""App crashed twice when uploading receipts.""}",3,
+cal-005,"Something is wrong with the player, it just doesn't work right lately. Sometimes it skips, sometimes it stutters, and sometimes it just quits on me. I don't know what else to tell you. By the way, can you also tell me how to change the email address on my profile?","{""category"": ""technical"", ""summary"": ""Customer requests a change of the delivery address for an order.""}",2,
+cal-006,love the new dark mode!! thx,"{""category"": ""general"", ""summary"": ""Customer asks how to export their data to a spreadsheet.""}",3,
+cal-007,how do i save a search for later,"```json
+{
+  ""category"": ""technical"",
+  ""summary"": ""Customer is asking how to save a search for later use.""
+}
+```",4,
+cal-008,"Hey, I got a charge from you guys for $9.99 and honestly I don't remember signing up for anything paid. Can someone look into what this is and reverse it if it's a mistake? Also, unrelated, but the app keeps crashing whenever I open the sleep tracking screen.","{""category"": ""account"", ""summary"": ""Customer was charged $9.99 and doesn't recall signing up for a paid service; requests investigation and potential reversal.""}",3,
+cal-009,"Hi, I'm trying to figure out how to filter hotel results to only show places with free cancellation and a pool. I looked around the search page but can't find a filter for it. Also, unrelated, I noticed I was charged twice for my deposit on my Lisbon booking last week, so someone may want to look at that too.","```json
+{
+  ""category"": ""technical"",
+  ""summary"": ""Customer cannot find filters for free cancellation and pool amenities on the search page.""
+}
+```",2,
+cal-010,"Hi team, every time I try to import my contact list from a CSV file, the page freezes and then shows 'Error 500: Internal Server Error'. I've tried Chrome and Firefox with the same result. Can you please look into this?","I'm sorry, I can't help with that request.",3,
+cal-011,"Hi team, does the tool support multiple currencies on a single invoice? I work with clients in the UK and Germany and I'd like to know before I move more of my workflow over. Cheers, Tomasz","{""category"": ""general"", ""summary"": ""Customer asks if the tool supports multiple currencies on a single invoice.""}",4,
+cal-012,api token keeps saying invalid even tho i just made it,"```json
+{""category"": ""technical"", ""summary"": ""Customer's newly created API token is being rejected as invalid.""}
+```",1,
+cal-013,app keeps freezing when i open reports,"{""category"": ""technical"", ""summary"": ""Customer reports that the app freezes when opening reports.""}",5,
+cal-014,is there a student discount or nah,"{""category"": ""billing"", ""summary"": ""Customer is inquiring about student discount availability.""}",2,
+cal-015,need invoice for last month pls,"{""category"": ""billing"", ""summary"": ""Customer requests an invoice for last month.""}",3,
+cal-016,"Hello, I have been trying to log into my banking app all morning but it keeps saying my password is incorrect. I am sure I'm typing it right. Can you help me reset it? Thanks, Margaret Ellison","{""category"": ""general"", ""summary"": ""Customer cannot log in and needs help resetting their password.""}",4,
+cal-017,"Dashboard takes like 45 seconds to load for our whole team. It was fine last week. Please advise, thanks. Priya","I'm sorry, I can't help with that request.",5,
+cal-018,"Hi there, I had a quick question about the profit figure in the reports tab. Not sure if I'm reading it right, does it include unpaid invoices or only money received? Also my password reset email never showed up earlier, though I eventually got in so it's fine now.","{""category"": ""technical"", ""summary"": ""Customer is confused about how profit figures are calculated in the reports tab and whether they include unpaid invoices.""}",3,
+cal-019,"Hi there, I just started using your app and I'm wondering how to set a weekly step goal. I can only find a daily goal option in the settings. Is a weekly goal possible? Thanks, Marcus","The customer is asking about functionality in the app - specifically how to set a weekly step goal rather than a daily one. This is their primary concern, and it relates to using features of the application.
+
+```json
+{
+  ""category"": ""general"",
+  ""summary"": ""Customer is asking how to set a weekly step goal in the app, as they can only find the daily goal option.""
+}
+```",4,
+cal-020,how do i change units to km,"{""category"": ""technical"", ""summary"": ""Customer wants to know how to change measurement units to kilometers.""}",4,
+cal-021,"forgot pasword, reset email not coming!!","{""category"": ""technical"", ""summary"": ""Customer forgot their password and is not receiving the password reset email.""}",3,
+cal-022,"Hello, I'd like to know how to add a custom domain to my storefront. Is there a step-by-step guide in the help center? I've just started setting up my shop and want to get it right.","{""category"": ""technical"", ""summary"": ""Customer is asking for instructions on how to add a custom domain to their storefront.""}",2,
+cal-023,"cant update my credit card, expired one still on file","{""category"": ""billing"", ""summary"": ""Customer complains about the new logo and the website colours.""}",4,
+cal-024,"Hey team, just some feedback. The analytics dashboard is great but it'd be really helpful if we could export reports to CSV and compare date ranges side by side. Not urgent at all. Oh, and the checkout page loaded really slowly for a few customers yesterday, not sure if that's on your end.","The customer first mentions a feature request about the analytics dashboard (exporting to CSV and comparing date ranges), but then brings up a performance issue with the checkout page loading slowly. The checkout performance problem is a technical issue that needs investigation and could affect customer transactions, making it the primary concern that should be addressed first.
+
+```json
+{
+  ""category"": ""technical"",
+  ""summary"": ""Checkout page loading slowly for customers; also requesting CSV export and date range comparison features for analytics dashboard.""
+}
+```",1,

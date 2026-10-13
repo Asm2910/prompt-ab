@@ -1,0 +1,218 @@
+[
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 685,
+  "input": "Hello, I run a small marketing agency and we'd love to explore a partnership with your platform. We work with lots of small retailers who need store setup help. Who should I contact about a referral or affiliate program?",
+  "output": "{\"category\": \"account\", \"summary\": \"Customer inquires about referral and affiliate partnership opportunities.\"}",
+  "id": "cal-001",
+  "judge_score": 2,
+  "judge_reasoning": "The email is a partnership/affiliate inquiry, which belongs in 'general', but the assistant labeled it 'account', which is wrong since nothing concerns login, passwords or profile settings. The one-sentence summary is accurate, so by the task's rubric this is a wrong category with a reasonable summary."
+ },
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 662,
+  "input": "Hello, I recently got a new email address and would like to update the one on my profile. My old address is going to be deactivated at the end of the month. Please let me know how I can change it.",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer wants to update their email address on their profile.\"}",
+  "id": "cal-002",
+  "judge_score": 2,
+  "judge_reasoning": "The request is to change the email on the customer's profile, which is clearly 'account' (profile settings), but the assistant labeled it 'billing'. The summary is accurate and one sentence, so this fits wrong category with a reasonable summary."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 342,
+  "input": "Hi team, I was wondering if you have any plans to add a feature for offline folders on the mobile app? It would really help when I travel. By the way, my login failed twice this morning, but it worked on the third try, so I'm guessing it was a fluke.",
+  "output": "The customer first mentions a feature request for offline folders, but then describes a technical issue with login failures. The login problem is a technical malfunction that should be prioritized over a feature suggestion, making this a technical support case.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer experienced login failures on mobile app this morning, though it eventually worked.\"\n}\n```",
+  "id": "cal-003",
+  "judge_score": 2,
+  "judge_reasoning": "The assistant admits the feature request comes first, then ignores the 'first problem stated' rule and picks 'technical'. That is wrong either way: the first item is a general feature request, and login issues belong to 'account', not 'technical'. The summary is readable, but it covers only the login issue, omits the offline-folders request, and wrongly ties the login failure to the mobile app."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 672,
+  "input": "how do i turn on dark mode?",
+  "output": "The customer is asking about how to enable a feature (dark mode) in the product, which is a user interface or feature-related question that doesn't involve billing, account management, or system errors.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer needs instructions on how to enable dark mode.\"\n}\n```",
+  "id": "cal-004",
+  "judge_score": 2,
+  "judge_reasoning": "The email is a how-to question about turning on dark mode. It involves no error, crash or integration, so it is not technical. 'General' fits best, and 'account' is arguably defensible as a settings preference. The assistant's own reasoning rules out system errors yet it still chose 'technical'. The summary is accurate and one sentence, so this is a wrong category with a reasonable summary."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 478,
+  "input": "Hi team, I upgraded to the 2TB plan yesterday and was charged $9.99 more than the price listed on your pricing page. I'd like the difference refunded. Also, unrelated, the desktop app has been crashing on startup since the last update, so if someone could look at that too, great.",
+  "output": "The customer's first problem is the billing charge discrepancy—they were overcharged for their plan upgrade and need a refund. While they also mention a technical issue with the desktop app crashing, the billing problem is stated first and is the primary concern they want addressed immediately.\n\n```json\n{\n  \"category\": \"billing\",\n  \"summary\": \"Customer was overcharged $9.99 on their 2TB plan upgrade and requests a refund for the difference.\"\n}\n```",
+  "id": "cal-005",
+  "judge_score": 5,
+  "judge_reasoning": "The first problem stated is the overcharge on the 2TB plan, so billing is the correct category. The summary is one sentence and accurate, though it omits the app crash, which is acceptable since it is a secondary issue. The reasoning shown before the JSON is to be ignored per the instructions."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 215,
+  "input": "Hi there, I was charged $29 on March 3rd even though I downgraded to the free plan on February 25th. Could you please refund the charge and confirm my subscription is now cancelled? Thanks, Marcus",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer wants to upgrade to the enterprise plan and asks for a call with sales.\"}",
+  "id": "cal-006",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'billing' is correct, since the email is about a charge and a refund after a plan downgrade. The summary is fabricated and unrelated, claiming the customer wants an enterprise upgrade and a sales call, when the email asks for a refund and confirmation of cancellation. The task's rubric gives 3 for a correct category with a wrong summary."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 647,
+  "input": "do u have a dark mode yet??",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer asks if dark mode is available.\"}",
+  "id": "cal-007",
+  "judge_score": 5,
+  "judge_reasoning": "The email is a simple feature inquiry, so 'general' is the correct category rather than account (profile settings). The summary is accurate, concise, and a single sentence, so both parts of the task are met."
+ },
+ {
+  "kind": "corrupted_unusable",
+  "request_id": 637,
+  "input": "can i see my statements in the app?",
+  "output": "I'm sorry, I can't help with that request.",
+  "id": "cal-008",
+  "judge_score": 1,
+  "judge_reasoning": "The task was to classify the email (likely general, or possibly billing/technical) and write a one-sentence summary. The assistant refused with an unhelpful message, giving no category and no summary. This is not a usable answer, so it falls under the lowest rubric tier."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 412,
+  "input": "how do i change my store theme pls",
+  "output": "```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer is asking how to change their store theme.\"\n}\n```",
+  "id": "cal-009",
+  "judge_score": 2,
+  "judge_reasoning": "The email is a how-to question about changing a store theme. It reports no error, crash or integration problem, so it is not technical. It does not concern billing or login/profile settings either, so general is the best fit, and account is at most arguable. The assistant chose technical, which is wrong, though the one-sentence summary is accurate."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 365,
+  "input": "Hey, one of my teammates, Priya, needs admin rights on our workspace but I don't see where to give her that permission. I'm the workspace owner. Could you point me to the right setting?",
+  "output": "{\"category\": \"account\", \"summary\": \"Customer asks how to export their data to a spreadsheet.\"}",
+  "id": "cal-010",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'account' is defensible, since permissions and admin rights are close to profile settings. The summary is entirely wrong: the customer asked how to grant admin rights to a teammate, not how to export data. Under the rubric, a correct category with a wrong summary scores 3."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 323,
+  "input": "Hey, I got a charge from you guys for $9.99 and honestly I don't remember signing up for anything paid. Can someone look into what this is and reverse it if it's a mistake? Also, unrelated, but the app keeps crashing whenever I open the sleep tracking screen.",
+  "output": "The customer's first concern is about an unexpected $9.99 charge on their account, which is a billing issue. While they also mention a technical problem with the app crashing, the billing charge is stated first and should take priority.\n\n```json\n{\n  \"category\": \"billing\",\n  \"summary\": \"Customer was charged $9.99 and doesn't recall signing up for a paid service; requests investigation and potential reversal.\"\n}\n```",
+  "id": "cal-011",
+  "judge_score": 5,
+  "judge_reasoning": "The first problem stated is the $9.99 charge, so billing is the correct category under the first-problem rule. The summary is one sentence and accurately covers the charge, the unrecognized signup, and the reversal request. It leaves out the crash, but the summary can reasonably center on the billing issue. The reasoning before the JSON is to be ignored."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 598,
+  "input": "Something is off with my profile. I'm not sure if it's the permissions or my login, but I can't get to my shared folders the way I used to be able to as the account owner. Maybe it's also related to why the app has been so slow lately?",
+  "output": "The customer is first reporting an issue with accessing their shared folders and permissions within their account/profile - this is the primary problem stated. While they mention app slowness as a secondary concern, the main issue is about account access and permissions.\n\n```json\n{\n  \"category\": \"account\",\n  \"summary\": \"Customer cannot access shared folders as account owner due to possible permission or login issues.\"\n}\n```",
+  "id": "cal-012",
+  "judge_score": 5,
+  "judge_reasoning": "The first problem stated is a profile, permissions or login issue that blocks access to shared folders, so 'account' is the correct category. The one-sentence summary is accurate. It leaves out the speculative app slowness, which is only a secondary 'maybe related' remark. The reasoning shown before the JSON is to be ignored."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 343,
+  "input": "Something is off with the web interface. Pages load weirdly, thumbnails don't show up and sometimes the download button just does nothing. Not sure if it's my browser or your side. Oh and I'd also love a way to get a discount for our nonprofit if one exists.",
+  "output": "{\"category\": \"technical\", \"summary\": \"Pages load incorrectly with missing thumbnails and non-functional download button.\"}",
+  "id": "cal-013",
+  "judge_score": 4,
+  "judge_reasoning": "The first problem stated is the web interface malfunctioning (pages loading oddly, missing thumbnails, a download button that does nothing), which is technical. The category is therefore correct. The summary accurately covers the technical problem but omits the nonprofit discount inquiry, and also leaves out the uncertainty about whether it's the browser; this is a slight incompleteness, though the one-sentence summary is accurate for the main issue."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 308,
+  "input": "Hey, quick question about how the sleep tracking feature works. Does it need me to wear my watch overnight, or can the phone alone detect my sleep? Also, unrelated, but I was charged twice for my premium subscription this month and I'd like that looked at. Thanks, Elena",
+  "output": "```json\n{\"category\": \"technical\", \"summary\": \"Customer asking about sleep tracking feature functionality with watch versus phone.\"}\n```",
+  "id": "cal-014",
+  "judge_score": 2,
+  "judge_reasoning": "The first thing the customer raises is a how-to question about sleep tracking, which is not an error, crash or integration. Under the stated definitions it falls under 'general', not 'technical'. The billing double-charge comes second, so it doesn't set the category. The summary accurately covers the first issue but leaves out the double charge, so the wrong category with a reasonable summary fits a 2."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 758,
+  "input": "Something is off with my account. Numbers on the tax summary page look wrong and sometimes the page just spins forever and never finishes loading. Not sure if it's a glitch or me. Also I was charged twice in March, so maybe someone can check that too.",
+  "output": "{\"category\": \"account\", \"summary\": \"Customer reports incorrect numbers on tax summary page, loading issues, and duplicate charges in March.\"}",
+  "id": "cal-015",
+  "judge_score": 2,
+  "judge_reasoning": "The first problem the customer states is the wrong numbers and endless loading on the tax summary page, which is a technical glitch. The word 'account' in the opening line is only framing, and the account category is limited to login, passwords and profile settings. The duplicate charge is mentioned second, so billing is not the answer either. The output's 'account' is therefore wrong, though the one-sentence summary is accurate and covers every issue."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 277,
+  "input": "Good afternoon. Could you send me a PDF invoice for my last three payments? I need them for my company's expense report, and the invoice must include our business name, Alvarez & Sons Ltd. Thanks in advance.",
+  "output": "The customer's first and primary need is to obtain PDF invoices for their previous payments, which is a billing-related request. They need documentation that includes their business name for accounting purposes.\n\n```json\n{\n  \"category\": \"billing\",\n  \"summary\": \"Customer requests PDF invoices for their last three payments to include in an expense report with their business name.\"\n}\n```",
+  "id": "cal-016",
+  "judge_score": 4,
+  "judge_reasoning": "The email asks for invoices, which falls under billing, so the category is correct. The one-sentence summary is accurate. It is slightly imprecise, since it reads as if the business name goes on the expense report rather than on the invoices. The reasoning shown before the JSON is to be ignored, so this is a minor flaw at most."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 541,
+  "input": "how do i add a unsubscribe link to my footer",
+  "output": "The customer is asking about how to add an unsubscribe link to their email footer, which is a technical/feature question about using the platform's functionality.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Customer needs instructions on how to add an unsubscribe link to their email footer.\"\n}\n```",
+  "id": "cal-017",
+  "judge_score": 3,
+  "judge_reasoning": "The email is a how-to question about adding a footer link. It is not an error, crash or integration, so under the stated definitions 'general' (everything else) fits best. 'Technical' is defensible but not the best fit. The summary is accurate and one sentence, but the category is not the best choice."
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 506,
+  "input": "Hey team, I'm wondering whether your platform supports selling digital downloads like PDFs and presets, or if it's physical products only. I'd really like to know before I commit to a plan. Also, unrelated, but I was charged twice for my last month's subscription, so can someone look into that too?",
+  "output": "The customer is asking about platform capabilities for digital products first, then mentions a duplicate charge issue second. Since the initial question concerns what the platform supports, this is a general inquiry about features, but the first concrete problem they want addressed is the duplicate billing charge.\n\n```json\n{\n  \"category\": \"billing\",\n  \"summary\": \"Customer was charged twice for their subscription last month and requests investigation.\"\n}\n```",
+  "id": "cal-018",
+  "judge_score": 3,
+  "judge_reasoning": "The email opens with a pre-sales question about digital downloads (general) and only then raises the duplicate charge (billing). The assistant picked billing by calling the charge the 'first concrete problem', which is defensible because the first item is a question and not a problem. The rule favours the first thing stated, so general is likely the better category. The summary also covers only the billing issue and leaves out the main opening question."
+ },
+ {
+  "kind": "corrupted_unusable",
+  "request_id": 479,
+  "input": "do you guys have a mobile app for managing orders?",
+  "output": "I'm sorry, I can't help with that request.",
+  "id": "cal-019",
+  "judge_score": 1,
+  "judge_reasoning": "The task was to classify the email (a general inquiry about a mobile app) and write a one-sentence summary. The assistant refused with no category and no summary, so there is no usable answer, which is the lowest tier of the scoring rubric."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 658,
+  "input": "app keeps freezing on my ipad",
+  "output": "{\"category\": \"technical\", \"summary\": \"Customer reports that the app is freezing on their iPad.\"}",
+  "id": "cal-020",
+  "judge_score": 5,
+  "judge_reasoning": "The email describes an app freezing, which is a crash-type problem and falls under technical. The summary is a single accurate sentence that matches the email, with nothing added or missing."
+ },
+ {
+  "kind": "corrupted_invented_summary",
+  "request_id": 390,
+  "input": "Hello, I noticed two identical charges for this month's subscription on my credit card statement. Please look into this and refund the duplicate payment as soon as possible. I'd appreciate a confirmation email once it's processed.",
+  "output": "{\"category\": \"billing\", \"summary\": \"Customer reports a damaged shipment and wants a replacement sent.\"}",
+  "id": "cal-021",
+  "judge_score": 3,
+  "judge_reasoning": "The category 'billing' is correct, since the email is about duplicate charges and a refund. But the summary describes a damaged shipment and replacement, which has nothing to do with the email, so it is wrong. Per the scoring, a correct category with a wrong summary gets 3."
+ },
+ {
+  "kind": "corrupted_wrong_category",
+  "request_id": 709,
+  "input": "wheres my student discount code, still paying full price",
+  "output": "{\"category\": \"general\", \"summary\": \"Customer is not receiving their student discount and is being charged full price.\"}",
+  "id": "cal-022",
+  "judge_score": null,
+  "judge_reasoning": "judge failed: invalid judge reply after retry: no JSON object found"
+ },
+ {
+  "kind": "real_wrong",
+  "request_id": 382,
+  "input": "Overall I really like the dashboard layout and the quick invoice templates, nice work. One suggestion: let us customize the template colors to match our branding. By the way, the mobile app crashed on me yesterday when I tried to upload a receipt, and it happened twice.",
+  "output": "The customer first compliments the product, then mentions a technical issue—the mobile app crashing when uploading receipts—which is the primary problem needing resolution. This technical malfunction takes precedence over the feature request about template customization.\n\n```json\n{\n  \"category\": \"technical\",\n  \"summary\": \"Mobile app crashes when attempting to upload receipts.\"\n}\n```",
+  "id": "cal-023",
+  "judge_score": 5,
+  "judge_reasoning": "The email has only one real problem, the mobile app crash on receipt upload. The compliments and the colour-customization suggestion are not problems, so 'technical' is the correct category under the first-problem rule. The one-sentence summary is accurate and captures the main issue. The reasoning before the JSON frames the rule as 'primary problem' rather than 'first problem', but that text is to be ignored and the outcome is correct."
+ },
+ {
+  "kind": "real_right",
+  "request_id": 216,
+  "input": "Hi, I recently got a new email address and need to update it on my profile. The old one is no longer active, so I can't receive verification codes. Please let me know how to change it.",
+  "output": "```json\n{\n  \"category\": \"account\",\n  \"summary\": \"Customer needs to update their email address on their profile and cannot access the old email for verification.\"\n}\n```",
+  "id": "cal-024",
+  "judge_score": 5,
+  "judge_reasoning": "The email is about updating an email address on a profile, which is an account matter (profile settings), and the first problem stated is the profile update. The output's category 'account' is correct, and the one-sentence summary accurately captures the request and the verification code issue. It omits the explicit ask for instructions, but this is minor."
+ }
+]

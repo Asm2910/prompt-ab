@@ -13,11 +13,13 @@ from app.models import MetricScore, RequestLog
 from app.stats import ChallengerResult, Decision, Test, VariantStats, decide
 
 METRIC_ALIASES = {"quality": "judge_quality"}
-HIGHER_IS_BETTER = {"judge_quality", "json_valid", "json_bare"}
+# Metrics a client can record per request with POST /requests/{id}/metrics: (min, max).
+CUSTOM_METRICS = {"accuracy": (0.0, 1.0), "user_rating": (1.0, 5.0)}
+HIGHER_IS_BETTER = {"judge_quality", "json_valid", "json_bare"} | set(CUSTOM_METRICS)
 LOWER_IS_BETTER = set(BUILTIN_METRICS)  # latency_ms, input_tokens, output_tokens, cost_usd
 # Judge scores are ordinal (1-5) and latency is skewed, so the rank-based test decides for
 # those two. The others use Welch's t-test. Both p-values are always reported.
-RANK_TEST_METRICS = {"judge_quality", "latency_ms"}
+RANK_TEST_METRICS = {"judge_quality", "latency_ms", "user_rating"}
 
 
 class UnknownMetricError(ValueError):
